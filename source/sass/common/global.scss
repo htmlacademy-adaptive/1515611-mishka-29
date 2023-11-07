@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@mixin list-item-style {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin no-list-decor() {
+  color: $basic-black;
+  text-decoration: none;
+}
+
+@mixin main-title {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $basic-black;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+@mixin main-subtitle {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $basic-black;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+// .main-title-card {
+//   font-family: "PTSans", "Arial", sans-serif;
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   color: $basic-black;
+//   font-size: 14px;
+//   line-height: 21px;
+// }
+
+// @mixin main-title-tablet {
+//   font-family: "PTSans", "Arial", sans-serif;
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   color: $basic-black;
+//   font-size: 21px;
+//   line-height: 26px;
+// }
+
+// @mixin main-text {
+//   font-family: "PTSans", "Arial", sans-serif;
+//   font-weight: normal;
+//   text-transform: uppercase;
+//   color: #333333;
+//   font-size: 14px;
+//   line-height: 21px;
+//   text-align: center;
+// }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

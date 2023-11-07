@@ -1,0 +1,8 @@
+.hero__title {
+  @include main-title;
+  @include list-item-style;
+  max-width: 215px;
+  text-align: center;
+  margin: 0 auto;
+}
+
