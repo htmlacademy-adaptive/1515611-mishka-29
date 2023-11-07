@@ -8,104 +8,87 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/open_sans_regular.woff2" as="font" />
+  <link rel="preload" href="fonts/open_sans_bold.woff2" as="font" />
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.json">
 </head>
 
 <body class="page__body body">
   <div class="page__body-container">
-    <header class="header">
-      <div class="header__container">
-        <a href="#" class="header__link">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logos/mishka-logo-desktop.svg" width="149" height="72">
-            <source media="(min-width: 768px)" srcset="img/logos/mishka-logo-tablet.svg" width="113" height="46">
-            <img src="./img/logos/mishka-logo-mobile.svg" alt="Логотип Мишки" class="header__img" width="85"
-              height="35">
-          </picture>
-        </a>
-
-        <nav class="header__nav nav nav--closed nav--nojs">
-          <!--Мобильное меню-->
-          <ul class="mobile-list nav__list site-list">
-            <li class="nav__list-item site-list__item">
-              <a class="site-list__link site-list__link--current" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="nav__list-item site-list__item">
-              <a class="site-list__link" href="#">Вязание на заказ</a>
-            </li>
-            <li class="nav__list-item site-list__item">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="nav__list-item site-list__item">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-
-          <!--Планшетное меню-->
-          <ul class="mobile-list nav__list site-list">
-            <li class="nav__list-item site-list__item">
-              <a class="site-list__link site-list__link--current" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="nav__list-item site-list__item">
-              <a class="site-list__link" href="#">Вязание на заказ</a>
-            </li>
-            <li class="nav__list-item site-list__item">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="nav__list-item site-list__item">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-
-          <!--Десктопное меню-->
-          <ul class="mobile-list nav__list site-list">
-            <li class="nav__list-item site-list__item">
-              <a class="site-list__link site-list__link--current" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="nav__list-item site-list__item">
-              <a class="site-list__link" href="#">Вязание на заказ</a>
-            </li>
-            <li class="nav__list-item site-list__item">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="nav__list-item site-list__item">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-          <button class="nav__toggle button" type="button">
+    <header class="header__nav">
+      <nav class="header__container">
+        <div class="header__nav-container">
+          <a href="#" class="header__nav-logo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logos/mishka-logo-desktop.svg" width="149" height="72">
+              <source media="(min-width: 768px)" srcset="img/logos/mishka-logo-tablet.svg" width="113" height="46">
+              <img src="./img/logos/mishka-logo-mobile.svg" alt="Логотип Мишки" class="header__img" width="85"
+                height="35">
+            </picture>
+          </a>
+          <button class="header__nav-toggle button" type="button">
             <span class="visually-hidden">Открыть меню.</span>
           </button>
+        </div>
 
-        </nav>
-      </div>
+        <div class="header__nav-list">
+          <div class="header__nav-second list">
+            <div class="list__container">
+              <a class="list__link" href="catalog.html">Каталог товаров</a>
+              <a class="list__link" href="form.html">Вязание на заказ</a>
+            </div>
+            <div class="list__container">
+              <a class="list__link" href="#">Новые поступления</a>
+              <a class="list__link" href="#">Распродажа</a>
+            </div>
+          </div>
+          <div class="header__nav-list">
+            <a class="list__link" href="#">
+              <span class="list__text">Поиск по сайту</span>
+            </a>
+            <a class="list__link" href="#">
+              <span class="list__text">Корзина: пока пуста</span>
+            </a>
+          </div>
+          <p class="header__nav-text">Бесплатная доставка по России</p>
+        </div>
+
+      </nav>
     </header>
+
     <main class="main">
-      <h1 class="visually-hidden">Мишка:интернет-магазин товаров ручной работы для дома.</h1>
+      <h1 class="visually-hidden">Мишка:интернет-магазин товаров ручной<br> работы для дома.</h1>
 
       <!--Hero-->
       <section class="hero">
         <h2 class="visually-hidden">Изделия ручной работы.</h2>
-        <div class="hero__wrapper">
-          <span class="hero__title">Милые штуки ручной работы для дома</span>
-          <picture class="hero__picture">
+        <div class="hero__wrapper--index">
+          <p class="hero__title">Милые штуки ручной работы для дома</p>
+          <!-- <picture class="hero__picture">
             <source media="(min-width:1150px)" srcset="./img/photos/index/hero-desktop.jpg" width="1150" height="518">
             <source media="(min-width:768px)" srcset="./img/photos/index/hero-desktop.jpg" width="768" height="518">
             <img class="hero__img" src="./img/photos/index/hero-mobile.jpg"
               srcset="./img/photos/index/hero-mobile@2x.jpg" alt="Милые штуки ручной работы для дома" width="320"
-              height="568">
-          </picture>
+              height="350">
+          </picture> -->
         </div>
-        <ul class="hero__list">
-          <li class="hero__item">Предметы интерьера</li>
-          <li class="hero__item">Детские игрушки</li>
+        <ul class="hero__list goods-list">
+          <li class="hero__item goods-list__item--interior">
+            <h3 class="hero__item-title">Предметы интерьера</h3>
+            <a href="#" class="goods-list__link"></a>
+          </li>
+          <li class="hero__item goods-list__item--toys">
+            <h3 class="hero__item-title">Детские игрушки</h3>
+            <a href="#" class="goods-list__link"></a>
+          </li>
         </ul>
       </section>
 
       <!--Товары на примерах-->
       <section class="goods">
         <div class="goods__wrapper">
-          <h2 class="goods__title">Вязаные корзинки</h2>
+          <h2 class="goods__title main-sutitle">Вязаные корзинки</h2>
           <span class="goods__subtitle">Товар недели</span>
           <p class="goods__text">Экологически чистая пряжа,
             ручная работа. Доступны в шести расцветках и трёх размерах.</p>
@@ -136,7 +119,7 @@
 
       <!--О компании-->
       <section class="about-us">
-        <h2 class="about-us__title">Коротко о нас:</h2>
+        <h2 class="about-us__title main-sutitle">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item">Экологически чистые материалы</li>
           <li class="about-us__item">Скандинавский стиль по российской цене</li>
@@ -150,7 +133,7 @@
       <!--Отзывы-->
       <section class="feedback">
         <div class="feedback__wrapper wrapper">
-          <h2 class="feedback__title">Отзывы</h2>
+          <h2 class="feedback__title main-sutitle">Отзывы</h2>
           <div class="feedback__slider slider">
             <ul class="slider__list">
               <li class="slider__item slider__item--current">
@@ -185,7 +168,7 @@
 
       <!--Контакты-->
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты компании.</h2>
+        <h2 class="visually-hidden main-subtitle">Контакты компании.</h2>
         <div class="contacts__wrapper">
           <dl class="contacts__table">
             <dt class="contacts__item">e-mail:</dt>
