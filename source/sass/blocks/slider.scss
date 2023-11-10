@@ -1,0 +1,39 @@
+.slider__list {
+  @include list-item-style;
+}
+
+.slider__text {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+  font-size: 15px;
+  line-height: 30px;
+  padding: 0 2px;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.slider__author {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.slider__item--current {
+  display: none;
+}
+
+.slider__mail {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.slider-button {
+  flex: 1;
+  height: 55px;
+}

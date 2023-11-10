@@ -1,4 +1,4 @@
-.page__body-container {
+.body__container {
   min-width: $mobile-width;
   min-height: 100vh;
   margin: 0;
@@ -11,7 +11,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    background-color: #f2f2f2;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,6 +22,6 @@
   }
 }
 
-.page__body {
+.body {
   margin: 0;
 }

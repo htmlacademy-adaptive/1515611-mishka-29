@@ -1,0 +1,42 @@
+
+.contacts__title {
+  @include main-subtitle;
+  margin-top: 0;
+  margin-bottom: 27px;
+  padding: 0 30px;
+}
+
+.contacts__table {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 30px;
+  margin: 0;
+  margin-bottom: 63px;
+}
+
+.contacts__container {
+  display: flex;
+  flex-direction: row;
+
+  &--email {
+    gap: 33px;
+  }
+
+  &--address {
+    gap: 38px;
+  }
+}
+
+.contacts__item {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.contacts__button {
+  width: 81%;
+  margin: 0 auto 40px auto;
+}

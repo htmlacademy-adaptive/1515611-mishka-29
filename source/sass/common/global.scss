@@ -10,7 +10,7 @@
   margin: 0;
 }
 
-@mixin no-list-decor() {
+@mixin no-decor {
   color: $basic-black;
   text-decoration: none;
 }
@@ -30,34 +30,6 @@
   font-size: 25px;
   line-height: 30px;
 }
-
-// .main-title-card {
-//   font-family: "PTSans", "Arial", sans-serif;
-//   font-weight: bold;
-//   text-transform: uppercase;
-//   color: $basic-black;
-//   font-size: 14px;
-//   line-height: 21px;
-// }
-
-// @mixin main-title-tablet {
-//   font-family: "PTSans", "Arial", sans-serif;
-//   font-weight: bold;
-//   text-transform: uppercase;
-//   color: $basic-black;
-//   font-size: 21px;
-//   line-height: 26px;
-// }
-
-// @mixin main-text {
-//   font-family: "PTSans", "Arial", sans-serif;
-//   font-weight: normal;
-//   text-transform: uppercase;
-//   color: #333333;
-//   font-size: 14px;
-//   line-height: 21px;
-//   text-align: center;
-// }
 
 .visually-hidden {
   position: absolute;
