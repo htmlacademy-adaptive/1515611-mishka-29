@@ -1,5 +1,23 @@
 .footer {
   background-color: #f1f1f1;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    gap: 121px;
+    padding-top: 48px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 101px;
+      height: 34px;
+      background: url("../img/logos/logo-footer.svg") no-repeat center center;
+      top: 67px;
+      left: 50px;
+    }
+  }
 }
 
 .footer__social {
@@ -7,8 +25,8 @@
   display: flex;
   gap: 30px;
   justify-content: center;
-  margin-top: 24px;
-  margin-bottom: 46px;
+  padding-top: 24px;
+  margin-bottom: 41px;
 }
 
 .footer-bottom__text {
@@ -18,6 +36,11 @@
   line-height: 18px;
   align-self: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    align-self: auto;
+    padding-top: 25px;
+  }
 }
 
 .footer-bottom {
@@ -34,5 +57,25 @@
     background: url("../img/icons/divider.svg") no-repeat center center;
     left: 0;
     bottom: 48px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+    position: relative;
+    padding-right: 51px;
+  }
+}
+
+.footer-bottom__link {
+  margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
   }
 }
