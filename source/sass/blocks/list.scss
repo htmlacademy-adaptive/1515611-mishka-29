@@ -1,0 +1,16 @@
+.list__link {
+  @include no-decor;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 24px;
+  border-top: 1px solid #ececec;
+  text-align: center;
+  padding: 14px 0;
+}
+
+.list__container {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,12 @@
+.map {
+  height: 455px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.map__img {
+  width: 100%;
+}
