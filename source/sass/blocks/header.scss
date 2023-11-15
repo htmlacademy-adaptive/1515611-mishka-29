@@ -33,6 +33,11 @@
   @media (min-width: $tablet-width) {
     left: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 8px;
+    left: 44%;
+  }
 }
 
 .header__nav-toggle {

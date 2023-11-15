@@ -41,8 +41,6 @@
 }
 
 .feedback__previous {
-  position: relative;
-
   &::before {
     content: "";
     position: absolute;
@@ -50,22 +48,20 @@
     height: 26px;
     background: url("../img/icons/arrow-left.svg") no-repeat center center;
     left: 36px;
-    bottom: 13px;
+    bottom: 103px;
   }
 }
 
 
 .feedback__next {
-  position: relative;
-
   &::before {
     content: "";
     position: absolute;
     width: 50px;
     height: 26px;
     background: url("../img/icons/arrow-right.svg") no-repeat center center;
-    left: 36px;
-    bottom: 13px;
+    right: 42px;
+    bottom: 102px;
   }
 }
 
