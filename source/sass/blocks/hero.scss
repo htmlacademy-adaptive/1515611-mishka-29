@@ -2,6 +2,12 @@
   min-height: 490px;
 }
 
+.hero__item {
+  @media (min-width: $desktop-width) {
+    flex: 1;
+  }
+}
+
 .hero__list {
   @include list-item-style;
 
@@ -9,6 +15,12 @@
     max-width: 668px;
     display: flex;
     margin: -145px auto 58px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    display: flex;
+    margin: -192px auto 130px auto;
   }
 }
 
@@ -83,13 +95,18 @@
         position: absolute;
         bottom: 16px;
         z-index: 1;
+
+        @media (min-width: $desktop-width) {
+          background-image: url("../img/icons/wave-decor-desktop.svg");
+          background-repeat: repeat-x;
+          height: 40px;
+        }
       }
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 54px;
-      padding: 153px 50px 0 50px;
       width: 100%;
+      margin: 0 auto 42px auto;
     }
 
 
@@ -113,4 +130,3 @@
     }
   }
 }
-

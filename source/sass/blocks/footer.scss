@@ -16,7 +16,16 @@
       background: url("../img/logos/logo-footer.svg") no-repeat center center;
       top: 67px;
       left: 50px;
+
+      @media (min-width: $desktop-width) {
+        top: 50px;
+      }
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 27%;
+    padding-top: 32px;
   }
 }
 
