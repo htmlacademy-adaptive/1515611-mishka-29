@@ -6,7 +6,7 @@
     display: flex;
     justify-content: flex-end;
     gap: 121px;
-    padding-top: 48px;
+    padding-top: 35px;
 
     &::before {
       content: "";
@@ -14,18 +14,18 @@
       width: 101px;
       height: 34px;
       background: url("../img/logos/logo-footer.svg") no-repeat center center;
-      top: 67px;
+      top: 52px;
       left: 50px;
 
       @media (min-width: $desktop-width) {
-        top: 50px;
+        padding-top: 27px;
       }
     }
   }
 
   @media (min-width: $desktop-width) {
     gap: 27%;
-    padding-top: 32px;
+    padding-top: 27px;
   }
 }
 

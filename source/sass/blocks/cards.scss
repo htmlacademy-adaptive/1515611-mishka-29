@@ -1,0 +1,168 @@
+.cards__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 128px 50px 45px 50px;
+    gap: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 49px;
+    flex-direction: row;
+    padding: 128px 50px 45px 50px;
+    justify-content: space-between;
+  }
+}
+
+.card__title {
+  @include list-item-style;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 24px;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.cards__container {
+  position: relative;
+  border: 1px solid $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
+    flex-direction: column;
+    max-width: 318px;
+  }
+}
+
+.card__text {
+  position: relative;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+  font-size: 13px;
+  line-height: 30px;
+  padding-bottom: 40px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    padding-bottom: 197px;
+
+    &--bigbag {
+      padding-bottom: 174px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 55px;
+
+    &--bigbag {
+      padding-bottom: 35px;
+    }
+  }
+}
+
+.card__price {
+  position: relative;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  color: $basic-black;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.cards__container::after {
+  position: absolute;
+  content: "";
+  background: url("../img/icons/cart.svg") no-repeat center center;
+  width: 20px;
+  height: 20px;
+  right: 26px;
+  bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    right: 31px;
+    bottom: 39px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 32px;
+    bottom: 32px;
+  }
+}
+
+.cards__container::before {
+  position: absolute;
+  content: "";
+  background: url("../img/icons/divider.svg") repeat-x center center;
+  width: calc(100% - 60px);
+  height: 68px;
+  bottom: 35px;
+  margin: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+    bottom: 46px;
+    margin: 0 30px;
+    left: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80%;
+    bottom: 42px;
+    margin: 0 30px;
+    left: 0%;
+  }
+}
+
+.card__info-wrapper {
+  padding: 25px 25px 20px 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 60px 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 22px 0 25px 27px;
+  }
+
+  &--bigbag {
+    @media (min-width: $desktop-width) {
+      padding: 22px 50px 25px 27px;
+    }
+  }
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
+}
