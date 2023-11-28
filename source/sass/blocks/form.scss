@@ -1,0 +1,71 @@
+
+.form__group-title {
+  position: relative;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $original-tiffany;
+  font-size: 17px;
+  line-height: 16px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.form__group-title::after {
+  content: "";
+  width: calc(100% - 60px);
+  height: 1px;
+  background-color: #63d1bb;
+  position: absolute;
+  left: 60px;
+  top: 7px;
+}
+
+.form__group {
+  border: 0;
+  padding: 0 30px;
+  margin: 0;
+}
+
+.form__list {
+  @include list-item-style;
+}
+
+.form__item {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form-hero__text {
+  margin-bottom: 30px;
+}
+
+.form__required {
+  padding: 0 30px 0 37px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__button {
+  margin: 25px auto 57px auto;
+  width: calc(100% - 58px);
+}
+
+.form__label {
+  position: relative;
+}
+
+.form__label::after {
+  content: "";
+  width: calc(100% - 60px);
+  height: 1px;
+  background-color: #63d1bb;
+  position: absolute;
+  left: 60px;
+  top: 7px;
+}

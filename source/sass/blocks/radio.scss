@@ -1,0 +1,14 @@
+.radio__label {
+  position: relative;
+}
+
+.radio__label::before {
+  content: "";
+  position: absolute;
+  border: 2px solid $basic-black;
+  border-radius: 50%;
+  left: -58px;
+  top: -6px;
+  width: 40px;
+  height: 40px;
+}

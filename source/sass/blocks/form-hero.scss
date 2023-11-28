@@ -1,9 +1,10 @@
-.hero-catalog {
+.form-hero {
   width: 100%;
   min-height: 175px;
   background-color: $basic-grey;
   padding-top: 72px;
   position: relative;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     padding-top: 100px;
@@ -11,7 +12,7 @@
   }
 }
 
-.hero-catalog::after {
+.form-hero::after {
   content: "";
   position: absolute;
   display: block;
@@ -35,7 +36,7 @@
   }
 }
 
-.hero-catalog__title {
+.form-hero__title {
   @include list-item-style;
   @include main-title;
   text-align: center;
@@ -53,4 +54,14 @@
     line-height: 57px;
     padding-bottom: 95px;
   }
+}
+
+.form-hero__text {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 0 32px;
+  margin: 0;
 }

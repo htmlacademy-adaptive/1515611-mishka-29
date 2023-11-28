@@ -6,15 +6,18 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin: 0 50px 67px 50px;
+    margin: 0 50px 58px 50px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 682px 365px;
     grid-template-rows: 165px 165px 135px;
+    margin: 0 auto 58px auto;
+    max-width: 1050px;
   }
 }
+
 
 .video-presentation__title {
   position: relative;
@@ -33,7 +36,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: 1/2/2/3;
-    padding: 104px 80px 0 80px;
+    padding: 97px 80px 0 80px;
   }
 }
 
@@ -52,7 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 88px;
+    bottom: 97px;
     left: 79px;
   }
 }
@@ -63,17 +66,17 @@
   color: $basic-black;
   font-size: 13px;
   line-height: 24px;
-  padding: 29px 10px 41px 34px;
+  padding: 4px 10px 41px 34px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
-    padding: 26px 40px 40px 40px;
+    padding: 4px 40px 40px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0 0 80px;
+    padding: 7px 0 0 80px;
     text-align: left;
   }
 }
@@ -90,7 +93,7 @@
 
   @media (min-width: $desktop-width) {
     width: calc(100% - 135px);
-    margin: 20px 0 0 80px;
+    margin: 12px 0 0 80px;
     font-size: 17px;
     line-height: 16px;
   }
@@ -99,14 +102,38 @@
 .video-presentation__img {
   width: 100%;
   height: 100%;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     width: 682px;
   }
 }
 
+.video-presentation__play {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.video-presentation__picture::after {
+  position: absolute;
+  content: "";
+  background: url("../img/icons/play-button.svg") no-repeat center center;
+  width: 120px;
+  height: 80px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
 
 .video-presentation__picture {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     order: -1;
   }
@@ -115,3 +142,4 @@
     grid-area: 1/1/4/1;
   }
 }
+

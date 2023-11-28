@@ -1,0 +1,22 @@
+.control {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 18px;
+  padding-bottom: 43px;
+}
+
+.control__label {
+  position: relative;
+}
+
+.control__label::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icons/checkbox.svg") no-repeat center center;
+  left: -58px;
+  top: -11px;
+  width: 40px;
+  height: 40px;
+}

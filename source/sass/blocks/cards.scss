@@ -1,19 +1,20 @@
 .cards__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 35px;
   padding: 30px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 128px 50px 45px 50px;
+    padding: 70px 50px 45px 50px;
     gap: 45px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 49px;
     flex-direction: row;
-    padding: 128px 50px 45px 50px;
-    justify-content: space-between;
+    padding: 128px 50px 55px 50px;
+    justify-content: center;
+    margin: 0 auto;
   }
 }
 
@@ -28,6 +29,16 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  &--bigbag {
+    @media (min-width: $tablet-width) {
+      padding-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 0;
+    }
   }
 }
 
@@ -54,23 +65,23 @@
   color: $basic-black;
   font-size: 13px;
   line-height: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 14px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
-    padding-bottom: 197px;
+    padding-bottom: 172px;
 
     &--bigbag {
-      padding-bottom: 174px;
+      padding-bottom: 148px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 55px;
+    padding-bottom: 35px;
 
     &--bigbag {
-      padding-bottom: 35px;
+      padding-bottom: 10px;
     }
   }
 }
@@ -90,64 +101,21 @@
   }
 }
 
-.cards__container::after {
-  position: absolute;
-  content: "";
-  background: url("../img/icons/cart.svg") no-repeat center center;
-  width: 20px;
-  height: 20px;
-  right: 26px;
-  bottom: 27px;
-
-  @media (min-width: $tablet-width) {
-    right: 31px;
-    bottom: 39px;
-  }
-
-  @media (min-width: $tablet-width) {
-    right: 32px;
-    bottom: 32px;
-  }
-}
-
-.cards__container::before {
-  position: absolute;
-  content: "";
-  background: url("../img/icons/divider.svg") repeat-x center center;
-  width: calc(100% - 60px);
-  height: 68px;
-  bottom: 35px;
-  margin: 0 30px;
-
-  @media (min-width: $tablet-width) {
-    width: 40%;
-    bottom: 46px;
-    margin: 0 30px;
-    left: 50%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 80%;
-    bottom: 42px;
-    margin: 0 30px;
-    left: 0%;
-  }
-}
-
 .card__info-wrapper {
   padding: 25px 25px 20px 27px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 60px 20px 0;
+    padding: 25px 31px 0 0;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 22px 0 25px 27px;
+    padding: 22px 33px 25px 27px;
   }
 
   &--bigbag {
     @media (min-width: $desktop-width) {
-      padding: 22px 50px 25px 27px;
+      padding: 22px 47px 25px 27px;
     }
   }
 }
@@ -164,5 +132,30 @@
   @media (min-width: $desktop-width) {
     width: 316px;
     height: 462px;
+  }
+}
+
+.card__bottom {
+  position: relative;
+  padding-top: 22px;
+  border-top: 1px solid $basic-grey;
+  display: flex;
+}
+
+.card__button {
+  appearance: none;
+  border: none;
+  background: url("../img/icons/cart.svg") no-repeat center center;
+  position: absolute;
+  right: 0;
+  top: 22px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    &--bigbag {
+      right: -13px;
+    }
   }
 }
