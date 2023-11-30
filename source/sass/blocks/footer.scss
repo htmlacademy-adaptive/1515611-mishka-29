@@ -36,6 +36,10 @@
   justify-content: center;
   padding-top: 24px;
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+  }
 }
 
 .footer-bottom__text {
@@ -48,7 +52,7 @@
 
   @media (min-width: $tablet-width) {
     align-self: auto;
-    padding-top: 25px;
+    padding-top: 15px;
   }
 }
 
@@ -85,6 +89,6 @@
   margin-top: 5px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 18px;
+    margin-top: 9px;
   }
 }

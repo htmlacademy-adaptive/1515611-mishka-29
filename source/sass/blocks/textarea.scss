@@ -1,3 +1,16 @@
 .textarea {
   min-height: 143px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+  padding: 17px 0 0 17px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    font-size: 19px;
+    line-height: 18px;
+  }
 }

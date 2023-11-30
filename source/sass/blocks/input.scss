@@ -8,6 +8,11 @@
   font-size: 17px;
   line-height: 18px;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 43px;
+  }
+
   &--tel {
     font-family: "OpenSans", "Arial", sans-serif;
     font-weight: bold;
@@ -17,6 +22,10 @@
     margin: 0 0 36px 0;
     text-transform: uppercase;
     position: relative;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 12px;
+    }
   }
 
   &--email {
@@ -28,6 +37,11 @@
     margin: 0;
     text-transform: uppercase;
     position: relative;
+    white-space: nowrap;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 14px;
+    }
   }
 }
 
@@ -39,6 +53,11 @@
   top: 24px;
   width: 40px;
   height: 40px;
+
+  @media (min-width: $tablet-width) {
+    right: 18px;
+    top: 0;
+  }
 }
 
 
@@ -50,6 +69,11 @@
   top: 24px;
   width: 40px;
   height: 40px;
+
+  @media (min-width: $tablet-width) {
+    right: 18px;
+    top: 18px;
+  }
 }
 
 .input__area[value] {
@@ -63,6 +87,12 @@
   border-top: none;
   border-left: none;
   border-right: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+    padding: 0 0 10px 0;
+  }
 }
 
 .input__area {
@@ -71,10 +101,22 @@
   border-left: none;
   border-right: none;
 
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+    padding: 10px 10px 19px 0;
+    width: 100%;
+  }
+
   &--tel {
     font-size: 17px;
     line-height: 18px;
     text-transform: uppercase;
+    background-color: transparent;
+  }
+
+  &--email {
+    background-color: transparent;
   }
 }
 
@@ -85,6 +127,11 @@
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 
@@ -95,10 +142,28 @@
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
-.group-info__item .input__label {
+.group-info__item .input__label--tel {
   gap: 7px;
+
+  @media (min-width: $tablet-width) {
+    gap: 148px;
+  }
+}
+
+
+.group-info__item .input__label--email {
+  gap: 7px;
+
+  @media (min-width: $tablet-width) {
+    gap: 123px;
+  }
 }
 
 .input__add {
@@ -109,14 +174,32 @@
   line-height: 16px;
   margin: 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .group-extra .input__label {
   gap: 21px;
+
+  @media (min-width: $tablet-width) {
+    gap: 130px;
+  }
 }
 
 .input__email {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+  }
+}
+
+.input__tel {
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+  }
 }
 
 .input__email::after {
@@ -128,3 +211,11 @@
   left: 79px;
   top: 7px;
 }
+
+.user-data {
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+

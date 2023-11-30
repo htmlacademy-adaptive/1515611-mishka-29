@@ -69,8 +69,6 @@
       свяжемся с вами, чтобы уточнить детали.</p>
 
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-
-      <!-- <div class="fieldsets"> -->
       <fieldset class="form__group group-type">
         <h3 class="form__group-title">Тип</h3>
         <ul class="form__list group-type__list">
@@ -122,20 +120,20 @@
         <ul class="form__list group-name__list">
           <li class="form__item group-name__item input">
             <label class="input__label">
-              <span class="input__name">Имя:</span>
+              <span class="input__name user-data">Имя:</span>
               <input class="input__area" type="text" name="user-name" value="Введите ваше имя*" required>
             </label>
           </li>
           <li class="form__item group-name__item input">
             <label class="input__label">
-              <span class="input__surname">Фамилия:</span>
+              <span class="input__surname user-data">Фамилия:</span>
               <input class="input__area" type="text" name="user-surname" value="Укажите фамилию*" required>
             </label>
           </li>
           <li class="form__item group-name__item input">
             <label class="input__label">
-              <span class="input__patronymic">Отчество:</span>
-              <input class="input__area" type="text" name="user-patronymic" value="Отчество,если желаете">
+              <span class="input__patronymic user-data">Отчество:</span>
+              <input class="input__area" type="text" name="user-patronymic" value="Отчество, если желаете">
             </label>
           </li>
         </ul>
@@ -155,7 +153,7 @@
             <li class="form__item group-info__item group-info__item--email input">
               <label class="input__label input__label--email">
                 <span class="input__email">e-mail:</span>
-                <input class="input__area input__area--email" type="email" name="email" placeholder="Ваш E-mail"
+                <input class="input__area input__area--email" type="email" name="email" placeholder="Ваш Email*"
                   required>
               </label>
             </li>
@@ -165,14 +163,14 @@
       <fieldset class="form__group group-extra input">
         <label class="group-extra__label input__label">
           <span class="input__add form__label">Доп</span>
-          <textarea class="textarea" name="comment" maxlength="250" placeholder="Опишите все ваши желания по заказу">
-              </textarea>
+          <textarea class="textarea" name="comment" maxlength="250">Опишите все ваши пожелания к заказу</textarea>
 
         </label>
       </fieldset>
-      <span class="form__required">Поля обязательны для заполнения</span>
-      <button class="form__button button" type="submit">Отправить заказ</button>
-      <!-- </div> -->
+      <div class="form__wrapper">
+        <span class="form__required">*Поля обязательны для заполнения</span>
+        <button class="form__button button" type="submit">Отправить заказ</button>
+      </div>
     </form>
   </main>
   <footer class="footer">

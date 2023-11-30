@@ -9,6 +9,12 @@
 
 .control__label {
   position: relative;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .control__label::before {
@@ -19,4 +25,32 @@
   top: -11px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/icons/checkbox-tablet.svg") no-repeat center center;
+    left: -81px;
+    top: -14px;
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.control__input[type="checkbox"]:checked + .control__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../img/icons/tick.svg") no-repeat center center;
+  left: -58px;
+  top: -11px;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/icons/tick-tablet.svg") no-repeat center center;
+    left: -81px;
+    top: -14px;
+    width: 55px;
+    height: 55px;
+  }
 }
