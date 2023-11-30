@@ -1,4 +1,4 @@
-.header__nav {
+.header {
   position: relative;
   min-height: 79px;
   background-color: $basic-white;
@@ -33,6 +33,15 @@
   @media (min-width: $tablet-width) {
     left: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 4px;
+    left: 33.3em;
+  }
+
+  @media (min-width: 1151px) {
+    left: 50.3em;
+  }
 }
 
 .header__nav-toggle {
@@ -53,4 +62,3 @@
 .header__nav-text {
   display: none;
 }
-

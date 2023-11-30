@@ -1,0 +1,45 @@
+.radio__label {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+.radio__label::before {
+  content: "";
+  position: absolute;
+  border: 2px solid $basic-black;
+  border-radius: 50%;
+  left: -58px;
+  top: -6px;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    left: -78px;
+    top: -11px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.radio__input[type="radio"]:checked + .radio__label::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: $original-tiffany;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: -46px;
+
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    left: -62px;
+  }
+}

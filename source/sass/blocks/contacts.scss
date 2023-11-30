@@ -1,10 +1,40 @@
+.contacts {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 50px;
+  }
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 33px;
+  background: url("../img/icons/zigzag-line.svg") center center;
+  background-repeat: repeat-x;
+  top: -60px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/icons/zigzag-line-tablet.svg") center center;
+    background-repeat: repeat-x;
+    bottom: 115px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/icons/zigzag-line-desktop.svg") center center;
+    background-repeat: repeat-x;
+    height: 70px;
+    top: -115px;
+  }
+}
 
 .contacts__title {
   @include main-subtitle;
   margin-top: 0;
   margin-bottom: 27px;
   padding: 0 30px;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     font-family: "OpenSans", "Arial", sans-serif;
@@ -19,27 +49,22 @@
       width: 47px;
       height: 81px;
       background: url("../img/icons/flag.svg") no-repeat center center;
-      top: -24px;
-      right: 53px;
+      top: -16px;
+      left: -61px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -17px;
+      left: -61px;
     }
   }
-}
 
-
-.contacts__title::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 33px;
-  background: url("../img/icons/zigzag-line.svg") center center;
-  background-repeat: repeat-x;
-  bottom: 50px;
-  left: 0;
-
-  @media (min-width: $tablet-width) {
-    background: url("../img/icons/zigzag-line-tablet.svg") center center;
-    background-repeat: repeat-x;
-    bottom: 115px;
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    position: relative;
+    top: 81px;
+    left: 124px;
   }
 }
 
@@ -56,6 +81,13 @@
     padding: 20px 50px;
     gap: 50px;
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding: 89px 0 89px 174px;
+    gap: 30px;
+    position: relative;
   }
 }
 
@@ -101,5 +133,31 @@
 
   @media (min-width: $tablet-width) {
     width: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    transform: translate(175px, -157px);
+    width: 12.9em;
+  }
+}
+
+.contacts__link {
+  @include no-decor;
+}
+
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 55px;
+    max-height: 32em;
+  }
+}
+
+.contacts__map {
+  @media (min-width: $desktop-width) {
+    flex: 1;
+    top: -82px;
+    position: relative;
   }
 }

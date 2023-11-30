@@ -1,0 +1,72 @@
+.form-hero {
+  width: 100%;
+  min-height: 175px;
+  background-color: $basic-grey;
+  padding-top: 72px;
+  position: relative;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    min-height: 235px;
+    margin-bottom: 56px;
+  }
+}
+
+.form-hero::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  width: 100%;
+  height: 32px;
+  bottom: 0;
+  z-index: 1;
+  background-image: url("../img/icons/zigzag-tablet.svg");
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/icons/zigzag-desktop.svg");
+    top: 235px;
+    left: 0;
+    height: 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.form-hero__title {
+  @include list-item-style;
+  @include main-title;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: bold;
+    color: $basic-black;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 95px;
+  }
+}
+
+.form-hero__text {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 0 32px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+}

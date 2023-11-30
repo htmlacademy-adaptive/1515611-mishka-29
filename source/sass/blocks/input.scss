@@ -1,0 +1,221 @@
+.input__label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 43px;
+  }
+
+  &--tel {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: bold;
+    color: $original-tiffany;
+    font-size: 17px;
+    line-height: 16px;
+    margin: 0 0 36px 0;
+    text-transform: uppercase;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &--email {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: bold;
+    color: $original-tiffany;
+    font-size: 17px;
+    line-height: 16px;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+    white-space: nowrap;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 14px;
+    }
+  }
+}
+
+.input__label--tel::after {
+  content: "";
+  position: absolute;
+  background: url("../img/icons/phone.svg") no-repeat center center;
+  right: 0;
+  top: 24px;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    right: 18px;
+    top: 0;
+  }
+}
+
+
+.input__label--email::after {
+  content: "";
+  position: absolute;
+  background: url("../img/icons/mail.svg") no-repeat center center;
+  right: 0;
+  top: 24px;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    right: 18px;
+    top: 18px;
+  }
+}
+
+.input__area[value] {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+  padding: 10px 10px 15px 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+    padding: 0 0 10px 0;
+  }
+}
+
+.input__area {
+  padding: 10px 10px 21px 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+    padding: 10px 10px 19px 0;
+    width: 100%;
+  }
+
+  &--tel {
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: transparent;
+  }
+
+  &--email {
+    background-color: transparent;
+  }
+}
+
+.input__area--tel[type="tel"]::placeholder {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+
+.input__area--email[type="email"]::placeholder {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+.group-info__item .input__label--tel {
+  gap: 7px;
+
+  @media (min-width: $tablet-width) {
+    gap: 148px;
+  }
+}
+
+
+.group-info__item .input__label--email {
+  gap: 7px;
+
+  @media (min-width: $tablet-width) {
+    gap: 123px;
+  }
+}
+
+.input__add {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $original-tiffany;
+  font-size: 17px;
+  line-height: 16px;
+  margin: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+}
+
+.group-extra .input__label {
+  gap: 21px;
+
+  @media (min-width: $tablet-width) {
+    gap: 130px;
+  }
+}
+
+.input__email {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+  }
+}
+
+.input__tel {
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+  }
+}
+
+.input__email::after {
+  content: "";
+  width: calc(100% - 78px);
+  height: 1px;
+  background-color: #63d1bb;
+  position: absolute;
+  left: 79px;
+  top: 7px;
+}
+
+.user-data {
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+

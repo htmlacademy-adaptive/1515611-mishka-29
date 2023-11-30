@@ -2,6 +2,12 @@
   min-height: 490px;
 }
 
+.hero__item {
+  @media (min-width: $desktop-width) {
+    flex: 1;
+  }
+}
+
 .hero__list {
   @include list-item-style;
 
@@ -9,6 +15,12 @@
     max-width: 668px;
     display: flex;
     margin: -145px auto 58px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    display: flex;
+    margin: -192px auto 130px auto;
   }
 }
 
@@ -26,6 +38,24 @@
     font-size: 43px;
     line-height: 50px;
     max-width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: bold;
+    color: $basic-black;
+    font-size: 43px;
+    line-height: 50px;
+    max-width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: bold;
+    color: $basic-black;
+    font-size: 53px;
+    line-height: 57px;
+    max-width: 700px;
   }
 }
 
@@ -65,15 +95,22 @@
         position: absolute;
         bottom: 16px;
         z-index: 1;
+
+        @media (min-width: $desktop-width) {
+          background-image: url("../img/icons/wave-decor-desktop.svg");
+          background-repeat: repeat-x;
+          height: 40px;
+        }
       }
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 54px;
+      width: 100%;
+      margin: 0 auto 42px auto;
     }
 
 
-    @media (min-width: 447px) {
+    @media (min-width: 450px) {
       background-image: url("../img/photos/index/hero-tablet.jpg");
       background-size: cover;
 
@@ -87,112 +124,9 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/photos/index/hero-desktop@2x.jpg");
+        width: 1150px;
+        height: 746px;
       }
     }
   }
 }
-
-
-//   &--form {
-//     background-image: none;
-
-//     @media (min-resolution: 2dppx) {
-//       background-image: none;
-//     }
-
-//     background-color: #e2e2e2;
-//     min-height: 177px;
-//     position: relative;
-//     z-index: 0;
-
-//     @media (min-width: variables.$screen-tablet) {
-//       margin-bottom: 54px;
-//       min-height: 238px;
-
-//       &::after {
-//         content: "";
-//         display: block;
-//         width: 100%;
-//         height: 24px;
-//         background-image: url("../img/zigzag_line_hero.svg");
-//         background-repeat: repeat-x;
-//         background-position: bottom;
-//         z-index: 0;
-//         position: absolute;
-//         bottom: -6px;
-//       }
-//     }
-
-//     @media (min-width: variables.$screen-desktop) {
-//       min-height: 272px;
-
-//       &::after {
-//         height: 34px;
-//         background-size: cover;
-//       }
-//     }
-//   }
-// }
-
-// .hero__type {
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-//   max-width: 1150px;
-//   margin: 0 auto;
-//   left: 0;
-//   right: 0;
-
-//   @media (min-width: variables.$screen-tablet) {
-//     display: flex;
-//     padding: 0 50px;
-//   }
-// }
-
-// .hero__title {
-//   text-align: center;
-//   font-size: clamp(27px, 5vw, 53px);
-//   line-height: clamp(30px, 5vw, 57px);
-//   padding: 90px 30px 249px;
-//   width: clamp(260px, 87vw, 668px);
-//   margin: 0 auto;
-
-//   @media (min-width: variables.$screen-tablet) {
-//     padding-top: 154px;
-//   }
-
-//   @media (min-width: variables.$screen-desktop) {
-//     width: 700px;
-//   }
-
-//   &--form {
-//     padding: 73.5px 0;
-
-//     @media (min-width: variables.$screen-tablet) {
-//       position: relative;
-//       padding-top: 101px;
-//       padding-bottom: 63px;
-//     }
-//   }
-// }
-
-// .hero__description {
-//   background-color: #ffffff;
-//   color: #444444;
-//   font-size: 13px;
-//   line-height: 24px;
-//   padding-top: 17px;
-//   padding-bottom: 29px;
-
-//   @media (min-width: variables.$screen-tablet) {
-//     font-size: 17px;
-//     line-height: 30px;
-//   }
-
-//   @media (min-width: variables.$screen-desktop) {
-//     padding-left: 217px;
-//     padding-right: 217px;
-//     white-space: initial;
-//     max-width: 1150px;
-//   }
-// }
