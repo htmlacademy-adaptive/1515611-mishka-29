@@ -102,6 +102,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 160px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 83px;
+  }
 }
 
 .group-name .form__group-title {
@@ -118,5 +122,10 @@
     justify-content: space-between;
     padding: 0 50px;
     gap: 136px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 222px;
+    gap: 172px;
   }
 }

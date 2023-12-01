@@ -11,6 +11,10 @@
     min-height: 235px;
     margin-bottom: 56px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 117px;
+  }
 }
 
 .form-hero::after {
@@ -68,5 +72,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 222px;
   }
 }

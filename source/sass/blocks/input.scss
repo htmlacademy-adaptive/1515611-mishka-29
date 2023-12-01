@@ -58,6 +58,10 @@
     right: 18px;
     top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 2px;
+  }
 }
 
 
@@ -73,6 +77,10 @@
   @media (min-width: $tablet-width) {
     right: 18px;
     top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 2px;
   }
 }
 
@@ -106,6 +114,10 @@
     line-height: 18px;
     padding: 10px 10px 19px 0;
     width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 10px 19px 16px;
   }
 
   &--tel {
@@ -155,6 +167,10 @@
   @media (min-width: $tablet-width) {
     gap: 148px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 77px;
+  }
 }
 
 
@@ -163,6 +179,10 @@
 
   @media (min-width: $tablet-width) {
     gap: 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 52px;
   }
 }
 
@@ -185,6 +205,10 @@
 
   @media (min-width: $tablet-width) {
     gap: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 75px;
   }
 }
 
