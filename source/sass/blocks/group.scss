@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 111px;
+  }
 }
 
 .group-type__list {
@@ -12,6 +16,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 49px 40px 0 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 49px 40px 0 18px;
   }
 }
 
@@ -31,6 +39,10 @@
     padding: 38px 50px 22px 50px;
     margin-bottom: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 38px 111px 22px 111px;
+  }
 }
 
 .group-color__list {
@@ -44,6 +56,13 @@
     grid-column-gap: 154px;
     padding: 36px 40px 0 64px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 141px;
+    padding: 36px 40px 0 10px;
+  }
 }
 
 .group-name {
@@ -53,6 +72,11 @@
     display: flex;
     gap: 125px;
     margin: 0 0 15px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 74px;
+    padding: 0 222px 0 111px;
   }
 }
 
@@ -79,13 +103,22 @@
 
   @media (min-width: $tablet-width) {
     background-color: $basic-grey;
-    padding: 52px 50px 35px 50px;
+    padding: 52px 222px 35px 111px;
     margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px 222px 47px 111px;
+    margin-bottom: 50px;
   }
 }
 
 .group-extra {
   margin-bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 222px 0 111px;
+  }
 }
 
 .group-info__list {

@@ -8,8 +8,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 50px 160px 50px;
-    padding: 82px 0 92px 175px;
+    max-width: 1050px;
+    padding: 85px 0 92px 175px;
+    margin: 0 auto 160px auto;
+    background: url("../img/photos/index/feedback-background-tablet.jpg") no-repeat center left;
   }
 }
 
