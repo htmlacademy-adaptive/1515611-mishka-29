@@ -18,14 +18,25 @@
       left: 50px;
 
       @media (min-width: $desktop-width) {
-        padding-top: 27px;
+        top: 52px;
+        left: 50px;
+      }
+
+      @media (min-width: 1151px) {
+        top: 52px;
+        left: 315px;
       }
     }
   }
 
   @media (min-width: $desktop-width) {
     gap: 27%;
-    padding-top: 32px;
+    padding: 44px 0 0 0;
+  }
+
+  @media (min-width: 1151px) {
+    gap: 22%;
+    padding: 44px 264px 0 0;
   }
 }
 

@@ -10,8 +10,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 165px 138px 56px 175px;
-    margin-bottom: 0;
+    padding: 163px 0 57px 125px;
+    margin: 0 auto;
+    max-width: 1050px;
   }
 }
 
@@ -99,7 +100,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 20px;
+    max-width: max-content;
+    row-gap: 110px;
+    column-gap: 116px;
   }
 }
 
