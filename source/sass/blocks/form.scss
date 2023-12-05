@@ -49,15 +49,6 @@
   line-height: 18px;
 }
 
-.form-hero__text {
-  margin-bottom: 30px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 17px;
-    line-height: 30px;
-  }
-}
-
 .form__required {
   padding: 0 30px 0 30px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -103,8 +94,8 @@
     padding-bottom: 160px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 83px;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 85px;
   }
 }
 
@@ -125,7 +116,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 222px;
+    margin: 0 auto;
+    max-width: 1150px;
     gap: 172px;
+    padding: 0 222px 0 222px;
+  }
+}
+
+.form__group-container {
+  @media (min-width: 1151px) {
+    background-color: $basic-grey;
   }
 }

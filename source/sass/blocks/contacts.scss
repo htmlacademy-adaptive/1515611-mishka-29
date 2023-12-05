@@ -21,6 +21,7 @@
     background: url("../img/icons/zigzag-line-tablet.svg") center center;
     background-repeat: repeat-x;
     bottom: 115px;
+    top: -95px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,13 +51,13 @@
       width: 47px;
       height: 81px;
       background: url("../img/icons/flag.svg") no-repeat center center;
-      top: -16px;
-      left: -61px;
-    }
+      top: -23px;
+      right: 53px;
 
-    @media (min-width: $desktop-width) {
-      bottom: -17px;
-      left: -61px;
+      @media (min-width: $desktop-width) {
+        top: -16px;
+        left: -61px;
+      }
     }
   }
 
@@ -66,6 +67,7 @@
     position: relative;
     top: 81px;
     left: 124px;
+    max-width: fit-content;
   }
 }
 
@@ -139,7 +141,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     transform: translate(175px, -157px);
-    width: 12.9em;
+    width: 13.6em;
   }
 }
 

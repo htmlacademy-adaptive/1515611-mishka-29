@@ -6,11 +6,39 @@
   font-size: 17px;
   line-height: 24px;
   border-top: 1px solid #ececec;
-  text-align: center;
-  padding: 14px 0;
+  text-align: left;
+  padding: 27px 0 27px 75px;
 }
 
 .list__container {
   display: flex;
   flex-direction: column;
+}
+
+.list__text--search {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icons/search.svg") no-repeat center center;
+    left: -44px;
+    top: 2px;
+  }
+}
+
+.list__text--bin {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icons/cart.svg") no-repeat center center;
+    left: -44px;
+    top: 2px;
+  }
 }

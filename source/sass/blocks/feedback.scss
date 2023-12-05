@@ -48,7 +48,6 @@
 
   @media (min-width: $tablet-width) {
     grid-area: 2/2/3/3;
-    margin-left: 150px;
     width: 175px;
     margin-top: 61px;
     margin-bottom: 0;
@@ -67,10 +66,10 @@
     height: 26px;
     background: url("../img/icons/arrow-left.svg") no-repeat center center;
     left: 36px;
-    bottom: 103px;
+    bottom: 13px;
 
     @media (min-width: $tablet-width) {
-      left: 531px;
+      left: 0;
       bottom: 15px;
     }
 
@@ -91,7 +90,7 @@
     height: 26px;
     background: url("../img/icons/arrow-right.svg") no-repeat center center;
     right: 42px;
-    bottom: 102px;
+    bottom: 13px;
 
     @media (min-width: $tablet-width) {
       right: 39px;
@@ -111,6 +110,11 @@
 
   @media (min-width: $tablet-width) {
     grid-area: 1/2/2/2;
-    margin-bottom: 47px;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1/2/2/2;
+    margin-bottom: 45px;
   }
 }

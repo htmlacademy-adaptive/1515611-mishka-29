@@ -72,7 +72,7 @@
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
-    padding: 4px 40px 40px 40px;
+    padding: 22px 40px 40px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,14 +125,19 @@
   background: url("../img/icons/play-button.svg") no-repeat center center;
   width: 120px;
   height: 80px;
+  transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
   cursor: pointer;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
 }
 
 .video-presentation__picture {
   position: relative;
+  display: block;
 
   @media (min-width: $tablet-width) {
     order: -1;
