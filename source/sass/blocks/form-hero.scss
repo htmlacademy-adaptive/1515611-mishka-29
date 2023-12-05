@@ -15,6 +15,11 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 117px;
   }
+
+  // @media (min-width: 1151px) {
+  //   margin: 0 auto 117px auto;
+  //   max-width: 1150px;
+  // }
 }
 
 .form-hero::after {
@@ -72,9 +77,20 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 222px;
+    margin: 0 auto 30px auto;
+    padding: 0 225px;
+  }
+
+  @media (min-width: 1151px) {
+    margin: 0 auto;
+    max-width: 1050px;
+    padding: 0 120px;
   }
 }
+

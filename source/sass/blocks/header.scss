@@ -55,6 +55,13 @@
   width: 20px;
   height: 14px;
 
+  &.opened {
+    background: url("../img/icons/cross.svg") no-repeat center center;
+    top: 26px;
+    width: 21px;
+    height: 21px;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }

@@ -6,7 +6,7 @@
     display: flex;
     justify-content: flex-end;
     gap: 121px;
-    padding-top: 35px;
+    padding-top: 58px;
 
     &::before {
       content: "";
@@ -14,7 +14,7 @@
       width: 101px;
       height: 34px;
       background: url("../img/logos/logo-footer.svg") no-repeat center center;
-      top: 47px;
+      top: 66px;
       left: 50px;
 
       @media (min-width: $desktop-width) {
@@ -23,7 +23,7 @@
       }
 
       @media (min-width: 1151px) {
-        top: 52px;
+        top: 44px;
         left: 315px;
       }
     }
@@ -31,12 +31,12 @@
 
   @media (min-width: $desktop-width) {
     gap: 27%;
-    padding: 44px 0 0 0;
+    padding: 45px 0 0 0;
   }
 
   @media (min-width: 1151px) {
     gap: 22%;
-    padding: 44px 264px 0 0;
+    padding: 36px 264px 0 0;
   }
 }
 

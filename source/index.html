@@ -65,6 +65,7 @@
       <h2 class="visually-hidden">Изделия ручной работы.</h2>
       <div class="hero__wrapper hero__wrapper--index">
         <p class="hero__title">Милые штуки ручной<br>работы для дома</p>
+
       </div>
       <ul class="hero__list goods-list">
         <li class="hero__item goods-list__item goods-list__item--interior">
@@ -112,7 +113,7 @@
             srcset="./img/photos/index/triple-set-mobile@2x.jpg" alt="Вязаные корзинки" width="260" height="315">
         </picture>
         <p class="goods__price">Цена: 990 руб.</p>
-        <button class="goods__button button" type="button">Заказать</button>
+        <button class="goods__button button hide-modal show-modal " type="button">Заказать </button>
       </div>
     </section>
 
@@ -140,7 +141,6 @@
               у популярных инстамамочек.
               В отчаянии, я накупила <br>аксессуаров и игрушек в Мишке,
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-
             <span class="slider__author">Анастасия Красильникова</span>
             <span class="slider__mail">@misssssiskras</span>
 
@@ -265,16 +265,18 @@
 
   </footer>
   <!--Модальное окно-->
-  <div id="add-to-cart" class="modal hide-modal">
-    <div class="modal__wrapper">
-      <h1 class="modal__title">Добавить в<br> корзину</h1>
-      <p class="modal__text">Выберите размер:</p>
-      <div class="modal__buttons">
-        <button class="modal__button" type="button">S</button>
-        <button class="modal__button" type="button">M</button>
-        <button class="modal__button" type="button">L</button>
+  <div id="order-modal" class="modal-container">
+    <div id="add-to-cart" class="modal hide-modal">
+      <div class="modal-wrapper">
+        <h1 class="modal__title">Добавить<br> в корзину</h1>
+        <p class="modal__text">Выберите размер:</p>
+        <div class="modal__buttons">
+          <button class="modal__button" type="button">S</button>
+          <button class="modal__button" type="button">M</button>
+          <button class="modal__button" type="button">L</button>
+        </div>
+        <button id="add-to-cart-btn" class="add-to-cart-btn button" type="button">Добавить</button>
       </div>
-      <button id="add-to-cart-btn" class="modal__button button" type="button">Добавить</button>
     </div>
   </div>
   <script src="js/script.js"></script>
