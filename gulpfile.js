@@ -5,6 +5,17 @@ import postcss from "gulp-postcss";
 import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
 import terser from "gulp-terser";
+import { deleteSync as del } from "del";
+import squoosh from "gulp-libsquoosh";
+import htmlmin from "gulp-htmlmin";
+import svgmin from "gulp-svgmin";
+
+export const minify = () => {
+  return gulp
+    .src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+};
 
 // Styles
 
@@ -14,7 +25,7 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([autoprefixer()]))
-    .pipe(gulp.dest("source/css", { sourcemaps: "." }))
+    .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(browser.stream());
 };
 
@@ -43,4 +54,53 @@ const scripts = () => {
   return gulp.src("source/js/*.js").pipe(terser()).pipe(gulp.dest("build/js"));
 };
 
-export default gulp.series(styles, scripts, server, watcher);
+const copy = (done) => {
+  gulp
+    .src(["source/fonts/**/*.{woff2,woff}", "source/*.ico"], {
+      base: "source",
+    })
+    .pipe(gulp.dest("build"));
+  done();
+};
+
+export const optimizeImages = () => {
+  return gulp
+    .src("source/img/**/*.{jpg,png}")
+    .pipe(squoosh())
+    .pipe(gulp.dest("build/img"));
+};
+
+export const copyImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png}").pipe(gulp.dest("build/img"));
+};
+
+const svg = () => {
+  return gulp
+    .src("source/img/**/*.svg")
+    .pipe(svgmin())
+    .pipe(gulp.dest("build/img"));
+};
+
+const clean = (done) => {
+  del("build");
+  done();
+};
+
+export const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(styles, minify, scripts, svg)
+);
+
+export default gulp.series(
+  clean,
+  minify,
+  scripts,
+  copyImages,
+  svg,
+  styles,
+  copy,
+  server,
+  watcher
+);
