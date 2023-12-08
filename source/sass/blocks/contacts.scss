@@ -132,16 +132,20 @@
 
 .contacts__button {
   width: 81%;
-  margin: 0 auto 42px auto;
+  margin: 0 auto 43px auto;
+  font-size: 18px;
 
   @media (min-width: $tablet-width) {
     width: 30%;
+    margin: 0 auto 60px auto;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     transform: translate(175px, -157px);
     width: 13.6em;
+    font-size: 17px;
   }
 }
 

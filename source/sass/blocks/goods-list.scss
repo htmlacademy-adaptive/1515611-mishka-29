@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1050px;
-    margin: 128px auto 0 auto;
+    margin: 106px auto 0 auto;
     padding: 0;
   }
 }
@@ -19,7 +19,7 @@
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: bold;
   color: $basic-white;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 24px;
   text-align: left;
 
@@ -30,7 +30,7 @@
 }
 
 .goods-list__item {
-  padding: 27px 131px 31px 33px;
+  padding: 24px 0 33px 30px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 29px 307px 35px 37px;
+    padding: 25px 0 42px 36px;
   }
 
   &--interior {
