@@ -65,6 +65,7 @@
 
 .hero__item-title {
   @include list-item-style;
+  max-width: fit-content;
 }
 
 .hero__wrapper {

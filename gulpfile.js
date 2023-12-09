@@ -47,7 +47,7 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/*.html").on("change", browser.reload);
+  gulp.watch("source/*.html", gulp.series(minify)).on("change", browser.reload);
 };
 
 const scripts = () => {
@@ -76,13 +76,22 @@ export const copyImages = () => {
 
 const svg = () => {
   return gulp
-    .src("source/img/**/*.svg")
+    .src(["source/img/**/*.svg", "!source/img/sprite.svg"])
     .pipe(svgmin())
     .pipe(gulp.dest("build/img"));
 };
 
 const clean = (done) => {
   del("build");
+  done();
+};
+
+export const sprite = (done) => {
+  gulp
+    .src("source/img/sprite.svg", {
+      base: "source",
+    })
+    .pipe(gulp.dest("build"));
   done();
 };
 
@@ -101,6 +110,7 @@ export default gulp.series(
   svg,
   styles,
   copy,
+  sprite,
   server,
   watcher
 );

@@ -8,6 +8,24 @@
   border-top: 1px solid #ececec;
   text-align: left;
   padding: 27px 0 27px 75px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    color: $original-tiffany;
+  }
+
+  &:focus-visible,
+  &:focus {
+    outline: 1px solid rgb(139, 14, 139);
+    outline-offset: 5px;
+  }
+
+  &.disabled {
+    opacity: 0.3;
+  }
 }
 
 .list__container {
@@ -26,6 +44,10 @@
     background: url("../img/icons/search.svg") no-repeat center center;
     left: -44px;
     top: 2px;
+
+    &:hover {
+      fill: $original-tiffany;
+    }
   }
 }
 

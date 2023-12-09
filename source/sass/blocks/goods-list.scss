@@ -22,23 +22,35 @@
   font-size: 19px;
   line-height: 24px;
   text-align: left;
+  cursor: pointer;
+  display: block;
+  padding: 24px 0 33px 30px;
+
+  &:active {
+    background-color: $basic-white;
+    outline: none;
+    color: $original-tiffany;
+  }
 
   @media (min-width: $tablet-width) {
+    &:hover {
+      margin-top: -5px;
+    }
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-.goods-list__item {
-  padding: 24px 0 33px 30px;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    min-width: 334px;
+    padding: 24px 0 40px 30px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 25px 0 42px 36px;
+  }
+}
+
+.goods-list__item {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-width: 334px;
   }
 
   &--interior {
@@ -203,6 +215,7 @@
 
 .goods__button {
   width: 100%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     grid-area: 4/1/5/1;
@@ -250,5 +263,55 @@
     font-size: 17px;
     line-height: 30px;
     margin-top: -10px;
+  }
+}
+
+.goods-list {
+  .goods-list__item:nth-child(odd) {
+    &:focus,
+    &:focus-visible {
+      outline: 1px solid rgb(139, 14, 139);
+      outline-offset: -2px;
+    }
+
+    &:active {
+      background-color: $basic-white;
+      outline: none;
+      color: $original-tiffany;
+    }
+
+    &:active::before {
+      opacity: 0.2;
+    }
+
+    @media (min-width: $tablet-width) {
+      &:hover {
+        margin-top: -5px;
+      }
+    }
+  }
+
+  .goods-list__item:nth-child(even) {
+    &:focus,
+    &:focus-visible {
+      outline: 1px solid rgb(139, 14, 139);
+      outline-offset: -2px;
+    }
+
+    &:active {
+      background-color: $basic-white;
+      outline: none;
+      color: $original-tiffany;
+    }
+
+    &:active::before {
+      opacity: 0.2;
+    }
+
+    @media (min-width: $tablet-width) {
+      &:hover {
+        margin-top: -5px;
+      }
+    }
   }
 }

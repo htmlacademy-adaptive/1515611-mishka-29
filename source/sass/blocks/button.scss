@@ -19,12 +19,12 @@
   }
 
   &:active {
-    background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3);
+    background-color: $basic-white;
+    color: $original-tiffany;
   }
 
   &:disabled {
-    background-color: #e5e5e5;
-    color: #ffffff;
+    background-color: $dark-grey;
+    color: hsl(0, 0%, 70%);
   }
 }
