@@ -18,7 +18,7 @@
   }
 }
 
-.modal__button {
+.radiobutton {
   width: 100%;
   border: 2px solid $basic-grey;
   padding: 17px;
@@ -70,7 +70,7 @@
   line-height: 30px;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -89,7 +89,7 @@
   font-size: 15px;
   line-height: 30px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -107,18 +107,33 @@
   border: none;
   padding: 20px 0;
   cursor: pointer;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 18px 0;
   }
 }
 
-.modal__buttons {
+.modal__list {
+  @include list-item-style;
   display: flex;
   gap: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     gap: 5px;
   }
+}
+
+.modal__item {
+  min-width: 75px;
+  min-height: 50px;
+  margin: 0;
+  padding: 15px 0 0 31px;
+}
+
+.modal__form-group {
+  border: none;
+  margin: 0;
+  padding: 0;
 }

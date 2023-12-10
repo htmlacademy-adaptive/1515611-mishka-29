@@ -59,6 +59,26 @@
 }
 
 .feedback__previous {
+  &:hover {
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+      outline: none;
+      color: $original-tiffany;
+    }
+  }
+
+  &:disabled {
+    &::after {
+      opacity: 0.1;
+    }
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -67,6 +87,7 @@
     background: url("../img/icons/arrow-left.svg") no-repeat center center;
     left: 36px;
     bottom: 13px;
+
 
     @media (min-width: $tablet-width) {
       left: 0;
@@ -83,6 +104,12 @@
 
 
 .feedback__next {
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -91,6 +118,16 @@
     background: url("../img/icons/arrow-right.svg") no-repeat center center;
     right: 42px;
     bottom: 13px;
+
+    &:active {
+      opacity: 0.3;
+      outline: none;
+      color: $original-tiffany;
+    }
+
+    &:disabled {
+      opacity: 0.1;
+    }
 
     @media (min-width: $tablet-width) {
       right: 39px;

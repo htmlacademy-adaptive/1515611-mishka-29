@@ -3,7 +3,8 @@
   display: block;
   color: $dark-grey;
   text-align: center;
-  font-size: 17px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
@@ -18,12 +19,12 @@
   }
 
   &:active {
-    background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3);
+    background-color: $basic-white;
+    color: $original-tiffany;
   }
 
   &:disabled {
-    background-color: #e5e5e5;
-    color: #ffffff;
+    background-color: $dark-grey;
+    color: hsl(0, 0%, 70%);
   }
 }

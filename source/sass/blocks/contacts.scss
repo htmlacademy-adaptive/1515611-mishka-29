@@ -132,22 +132,56 @@
 
 .contacts__button {
   width: 81%;
-  margin: 0 auto 42px auto;
+  margin: 0 auto 43px auto;
+  font-size: 18px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 30%;
+    margin: 0 auto 60px auto;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     transform: translate(175px, -157px);
     width: 13.6em;
+    font-size: 17px;
   }
 }
 
 .contacts__link {
   @include no-decor;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #62d1ba;
+    margin-top: -1px;
+  }
+
+  &:active {
+    color: #219f8c;
+    outline: none;
+  }
+
+  &:hover {
+    color: #219f8c;
+
+    &::after {
+      background-color: #219f8c;
+    }
+  }
+
+  &:focus-visible,
+  &:focus {
+    outline: 1px solid rgb(139, 14, 139);
+    outline-offset: 5px;
+  }
 }
+
 
 .contacts__wrapper {
   @media (min-width: $desktop-width) {
