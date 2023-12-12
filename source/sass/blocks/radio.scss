@@ -43,3 +43,25 @@
     left: -62px;
   }
 }
+
+.radio__input {
+  &:hover ~ .radio__label::before {
+    border: 2px solid $original-tiffany;
+  }
+
+  &:active ~ .radio__label::before {
+    border: 2px solid $dark-tiffany;
+  }
+
+  &:focus ~ .radio__label::before,
+  &:focus-visible ~ .radio__label::before {
+    outline: 1px solid rgb(139, 14, 139);
+    outline-offset: 5px;
+  }
+
+  &:disabled ~ .radio__label::before,
+  &:disabled ~ .radio__label::after {
+    cursor: none;
+    opacity: 0.3;
+  }
+}

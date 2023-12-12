@@ -44,10 +44,18 @@
   @media (min-width: $desktop-width) {
     padding: 25px 0 42px 36px;
   }
+
+  @media (min-width: 1151px) {
+    padding: 25px 0 60px 36px;
+  }
 }
 
 .goods-list__item {
   position: relative;
+
+  &:hover::after {
+    opacity: 0.7;
+  }
 
   @media (min-width: $tablet-width) {
     min-width: 334px;
@@ -268,6 +276,10 @@
 
 .goods-list {
   .goods-list__item:nth-child(odd) {
+    &:hover {
+      background-color: $dark-tiffany;
+    }
+
     &:focus,
     &:focus-visible {
       outline: 1px solid rgb(139, 14, 139);
@@ -292,6 +304,10 @@
   }
 
   .goods-list__item:nth-child(even) {
+    &:hover {
+      background-color: $original-tiffany;
+    }
+
     &:focus,
     &:focus-visible {
       outline: 1px solid rgb(139, 14, 139);

@@ -42,11 +42,11 @@
           </div>
         </div>
         <div class="list__container">
-          <a class="list__link" href="#">
-            <span class="list__text list__text--search">Поиск по сайту</span>
+          <a class="list__link list__text--search" href="#">
+            <span class="list__text ">Поиск по сайту</span>
           </a>
-          <a class="list__link" href="#">
-            <span class="list__text list__text--bin">Корзина: пока пуста</span>
+          <a class="list__link list__text--cart" href="#">
+            <span class="list__text">Корзина: пока пуста</span>
           </a>
         </div>
         <p class="header__nav-text">Бесплатная доставка по России</p>
@@ -267,26 +267,26 @@
 
         <form class="order-modal__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="modal__form-group">
-            <h1 class="modal__title">Добавить<br> в корзину</h1>
+            <h1 class="modal__title">Добавить&nbsp;<br> в корзину</h1>
             <h2 class="modal__text">Выберите размер</h2>
             <ul class="modal__list">
               <li class="modal__item radiobutton">
-                <input id="radiobutton__small" class="radiobutton__small visually-hidden" type="radio" name="type"
-                  value="small" checked>
+                <input id="radiobutton__small" class="radiobutton__input radiobutton__small visually-hidden"
+                  type="radio" name="type" value="small" checked>
                 <label class="radiobutton__label" for="radiobutton__small">S</label>
               </li>
               <li class="modal__item radiobutton">
-                <input id="radiobutton__medium" class="radiobutton__medium visually-hidden" type="radio" name="type"
-                  value="medium" checked>
+                <input id="radiobutton__medium" class="radiobutton__input radiobutton__medium visually-hidden"
+                  type="radio" name="type" value="medium" checked>
                 <label class="radiobutton__label" for="radiobutton__medium">M</label>
               </li>
               <li class="modal__item radiobutton">
-                <input id="radiobutton__large" class="radiobutton__large visually-hidden" type="radio" name="type"
-                  value="large" checked>
+                <input id="radiobutton__large" class="radiobutton__input radiobutton__large visually-hidden"
+                  type="radio" name="type" value="large">
                 <label class="radiobutton__label" for="radiobutton__large">L</label>
               </li>
             </ul>
-            <button id="add-to-cart-btn" class="add-to-cart-btn button" type="button">Добавить</button>
+            <button id="add-to-cart-btn" class="add-to-cart-btn button" type="submit">Добавить</button>
           </fieldset>
         </form>
       </div>

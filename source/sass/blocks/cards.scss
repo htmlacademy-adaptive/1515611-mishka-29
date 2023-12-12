@@ -40,6 +40,24 @@
       padding-right: 0;
     }
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    color: $original-tiffany;
+  }
+
+  &:focus-visible,
+  &:focus {
+    outline: 1px solid rgb(139, 14, 139);
+    outline-offset: -20px;
+  }
+
+  &.disabled {
+    opacity: 0.3;
+  }
 }
 
 .cards__container {
@@ -145,7 +163,8 @@
 .card__button {
   appearance: none;
   border: none;
-  background: url("../img/icons/cart.svg") no-repeat center center;
+  mask-image: url("../img/icons/cart.svg");
+  mask-repeat: no-repeat;
   position: absolute;
   right: 0;
   top: 22px;
@@ -157,5 +176,49 @@
     &--bigbag {
       right: -13px;
     }
+  }
+
+  &:hover {
+    background-color: $original-tiffany;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $dark-tiffany;
+    opacity: 0.3;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid rgb(139, 14, 139);
+  }
+
+  &:disabled {
+    opacity: 0.1;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.card {
+  &:hover {
+    border: 1px solid #ededed;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    border: 1px solid #ededed;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:focus-visible {
+    border: none;
+    box-shadow: none;
+  }
+
+  &:focus {
+    outline: 1px solid rgb(139, 14, 139);
   }
 }

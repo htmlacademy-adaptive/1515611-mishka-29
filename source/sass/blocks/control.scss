@@ -20,7 +20,9 @@
 .control__label::before {
   content: "";
   position: absolute;
-  background: url("../img/icons/checkbox.svg") no-repeat center center;
+  mask-image: url("../img/icons/checkbox.svg");
+  mask-repeat: no-repeat;
+  background-color: $basic-black;
   left: -58px;
   top: -11px;
   width: 40px;
@@ -28,7 +30,8 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    background: url("../img/icons/checkbox-tablet.svg") no-repeat center center;
+    mask-image: url("../img/icons/checkbox-tablet.svg");
+    mask-repeat: no-repeat;
     left: -81px;
     top: -14px;
     width: 55px;
@@ -52,5 +55,28 @@
     top: -14px;
     width: 55px;
     height: 55px;
+  }
+}
+
+
+.control__input {
+  &:hover ~ .control__label::before {
+    background-color: $original-tiffany;
+  }
+
+  &:active ~ .control__label::before {
+    background-color: $dark-tiffany;
+  }
+
+  &:focus ~ .control__label::before,
+  &:focus-visible ~ .control__label::before {
+    outline: 1px solid rgb(139, 14, 139);
+    outline-offset: 5px;
+  }
+
+  &:disabled ~ .control__label::before,
+  &:disabled ~ .control__label::after {
+    cursor: none;
+    opacity: 0.3;
   }
 }

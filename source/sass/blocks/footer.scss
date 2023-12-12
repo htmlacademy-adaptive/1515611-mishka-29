@@ -84,6 +84,27 @@
   left: 0;
   display: block;
   position: relative;
+  color: $basic-black;
+  height: fit-content;
+
+  &:hover {
+    color: $dark-tiffany;
+  }
+
+  &:active {
+    color: $dark-tiffany;
+    opacity: 0.3;
+  }
+
+  &:focus-visible,
+  &:focus {
+    outline: 1px solid rgb(139, 14, 139);
+    outline-offset: 5px;
+  }
+
+  &.disabled {
+    opacity: 0.3;
+  }
 
   @media (min-width: $mobile-width) {
     display: none;
@@ -103,5 +124,24 @@
   @media (min-width: $desktop-width) {
     top: 10px;
     position: relative;
+  }
+}
+
+.footer-bottom__link {
+  color: $original-tiffany;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    opacity: 0.3;
+  }
+
+  &:focus-visible,
+  &:focus {
+    outline: 1px solid rgb(139, 14, 139);
+    outline-offset: 5px;
   }
 }

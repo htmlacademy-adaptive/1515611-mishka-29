@@ -23,6 +23,19 @@
     text-transform: uppercase;
     position: relative;
 
+    &:hover::after {
+      background-color: $original-tiffany;
+    }
+
+    &:active::after {
+      background-color: $original-tiffany;
+    }
+
+    &:focus::after,
+    &:focus-visible::after {
+      background-color: $dark-tiffany;
+    }
+
     @media (min-width: $tablet-width) {
       margin-bottom: 12px;
     }
@@ -39,6 +52,20 @@
     position: relative;
     white-space: nowrap;
 
+
+    &:hover::after {
+      background-color: $original-tiffany;
+    }
+
+    &:active::after {
+      background-color: $original-tiffany;
+    }
+
+    &:focus::after,
+    &:focus-visible::after {
+      background-color: $dark-tiffany;
+    }
+
     @media (min-width: $tablet-width) {
       padding-top: 14px;
     }
@@ -48,11 +75,13 @@
 .input__label--tel::after {
   content: "";
   position: absolute;
-  background: url("../img/icons/phone.svg") no-repeat center center;
-  right: 0;
-  top: 24px;
+  mask-image: url("../img/icons/phone.svg");
+  mask-repeat: no-repeat;
+  right: -8px;
+  top: 32px;
   width: 40px;
   height: 40px;
+  background-color: rgb(155, 154, 154);
 
   @media (min-width: $tablet-width) {
     right: 18px;
@@ -68,11 +97,13 @@
 .input__label--email::after {
   content: "";
   position: absolute;
-  background: url("../img/icons/mail.svg") no-repeat center center;
-  right: 0;
-  top: 24px;
+  mask-image: url("../img/icons/mail.svg");
+  mask-repeat: no-repeat;
+  right: -8px;
+  top: 32px;
   width: 40px;
   height: 40px;
+  background-color: rgb(155, 154, 154);
 
   @media (min-width: $tablet-width) {
     right: 18px;
@@ -108,6 +139,7 @@
   border-top: none;
   border-left: none;
   border-right: none;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
@@ -124,11 +156,36 @@
     font-size: 17px;
     line-height: 18px;
     text-transform: uppercase;
-    background-color: transparent;
   }
 
   &--email {
-    background-color: transparent;
+    &:hover::after {
+      background-color: $original-tiffany;
+    }
+
+    &:active::after {
+      background-color: $original-tiffany;
+    }
+
+    &:focus::after,
+    &:focus-visible::after {
+      background-color: $dark-tiffany;
+    }
+  }
+
+
+  &:hover {
+    border-bottom: 2px solid $original-tiffany;
+  }
+
+  &:active {
+    border-bottom: 2px solid $dark-tiffany;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 2px solid rgb(139, 14, 139);
+    outline-offset: -1px;
   }
 }
 
