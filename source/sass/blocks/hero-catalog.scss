@@ -6,8 +6,13 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
-    min-height: 235px;
+    padding-top: 17px;
+    min-height: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
+    min-height: 177px;
   }
 }
 
@@ -25,7 +30,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/icons/zigzag-desktop.svg");
-    top: 235px;
+    top: 152px;
     left: 0;
     height: 35px;
   }
@@ -51,6 +56,5 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding-bottom: 95px;
   }
 }

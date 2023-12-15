@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin: 0 50px 58px 50px;
+    margin: 0 50px 69px 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,10 +129,6 @@
   left: 50%;
   top: 50%;
   cursor: pointer;
-
-  @media (min-width: 769px) {
-    display: none;
-  }
 }
 
 .video-presentation__picture {

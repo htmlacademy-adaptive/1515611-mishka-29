@@ -1,0 +1,21 @@
+.group-extra {
+  margin-bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 10px auto;
+    max-width: 1050px;
+    padding: 0 175px 0 60px;
+  }
+
+  @media (min-width: 1151px) {
+    margin: 0 auto 10px auto;
+    max-width: 1050px;
+    padding: 0 0 0 50px;
+  }
+}
+
+.group-extra__label {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}

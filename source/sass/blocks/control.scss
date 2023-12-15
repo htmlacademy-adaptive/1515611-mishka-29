@@ -70,8 +70,7 @@
 
   &:focus ~ .control__label::before,
   &:focus-visible ~ .control__label::before {
-    outline: 1px solid rgb(139, 14, 139);
-    outline-offset: 5px;
+    background-color: $dark-tiffany;
   }
 
   &:disabled ~ .control__label::before,

@@ -43,6 +43,13 @@
   &:active {
     border: 2px solid $dark-tiffany;
   }
+
+  & .radiobutton__input:focus,
+  .radiobutton__input:focus-visible {
+    & ~ .radiobutton__label {
+      color: $dark-tiffany;
+    }
+  }
 }
 
 // неактивный li

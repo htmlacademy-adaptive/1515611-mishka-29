@@ -89,23 +89,6 @@
   top: 7px;
 }
 
-.group-color .form__group-title {
-  @media (min-width: $tablet-width) {
-    padding-bottom: 160px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 85px;
-  }
-}
-
-.group-name .form__group-title {
-  @media (min-width: $tablet-width) {
-    padding-top: 28px;
-    align-self: flex-start;
-  }
-}
-
 .form__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
