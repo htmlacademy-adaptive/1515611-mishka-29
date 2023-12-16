@@ -95,9 +95,17 @@ export const sprite = (done) => {
   done();
 };
 
+export const createWebp = () => {
+  return gulp
+    .src("source/img/**/*.{jpg,png}")
+    .pipe(squoosh({ webp: {} }))
+    .pipe(gulp.dest("build/img"));
+};
+
 export const build = gulp.series(
   clean,
   copy,
+  createWebp,
   optimizeImages,
   gulp.parallel(styles, minify, scripts, svg)
 );
@@ -107,6 +115,7 @@ export default gulp.series(
   minify,
   scripts,
   copyImages,
+  createWebp,
   svg,
   styles,
   copy,

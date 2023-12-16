@@ -1,0 +1,26 @@
+.group-info {
+  margin: 0 0 34px 0;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+    padding: 52px 50px 50px 50px;
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px 222px 47px 111px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 1151px) {
+    margin: 0 auto 50px auto;
+    max-width: 1050px;
+    padding: 52px 0 47px 50px;
+  }
+}
+
+.group-info__list {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}

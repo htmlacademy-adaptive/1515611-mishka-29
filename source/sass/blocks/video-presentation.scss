@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin: 0 50px 58px 50px;
+    margin: 0 50px 69px 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,15 +129,33 @@
   left: 50%;
   top: 50%;
   cursor: pointer;
-
-  @media (min-width: 769px) {
-    display: none;
-  }
 }
 
 .video-presentation__picture {
   position: relative;
   display: block;
+
+
+  &:focus::after,
+  &:focus-visible::after {
+    outline: 1px solid rgb(139, 14, 139);
+  }
+
+  &:hover::after {
+    transform: scale(1.2) translate(-50%, -50%);
+    transition: 0.5s;
+  }
+
+  &:active::after {
+    transform: scale(0.8) translate(-50%, -50%);
+    transition: 0.5s;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    transform: scale(0.8);
+    opacity: 0.1;
+  }
 
   @media (min-width: $tablet-width) {
     order: -1;

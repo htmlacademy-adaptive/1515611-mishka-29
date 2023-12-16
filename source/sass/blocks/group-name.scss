@@ -1,0 +1,45 @@
+.group-name .form__group-title {
+  @media (min-width: $tablet-width) {
+    padding-top: 28px;
+    align-self: flex-start;
+  }
+}
+
+.group-name {
+  margin: 0 0 10px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 125px;
+    margin: 0 0 15px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 74px;
+    padding: 0 222px 0 111px;
+  }
+
+  @media (min-width: 1151px) {
+    margin: 0 auto;
+    max-width: 1050px;
+    padding: 0 0 0 50px;
+  }
+}
+
+
+.group-name__list {
+  padding: 28px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 0 0;
+    width: 100%;
+  }
+}
+
+.group-name__item {
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 37px;
+  }
+}

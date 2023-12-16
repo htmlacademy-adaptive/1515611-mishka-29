@@ -1,0 +1,40 @@
+.group-type {
+  border: 0;
+  margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1050px;
+    padding: 0 60px 0 60px;
+  }
+
+  @media (min-width: 1151px) {
+    margin: 0 auto;
+    max-width: 1050px;
+    padding: 0 50px;
+  }
+}
+
+.group-type__list {
+  padding: 36px 40px 0 58px;
+
+  @media (min-width: $tablet-width) {
+    padding: 49px 40px 0 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 49px 40px 0 18px;
+  }
+}
+
+.group-type__item {
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
+  }
+}

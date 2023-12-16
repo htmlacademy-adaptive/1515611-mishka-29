@@ -25,31 +25,29 @@
               height="35">
           </picture>
         </a>
-        <button class="header__nav-toggle" type="button">
+        <button class="header__nav-toggle header__nav-toggle--hidden" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
       </div>
 
       <div class="header__nav-list list">
-        <div class="header__nav-second">
-          <div class="list__container">
-            <a class="list__link" href="catalog.html">Каталог товаров</a>
-            <a class="list__link" href="form.html">Вязание на заказ</a>
-          </div>
-          <div class="list__wrapper">
-            <a class="list__link " href="#">Новые поступления</a>
-            <a class="list__link" href="#">Распродажа</a>
-          </div>
+        <div class="list__container list__second-container list__second-container--form-color">
+          <a class="list__link" href="catalog.html">Каталог товаров</a>
+          <a class="list__link" href="form.html">Вязание на заказ</a>
         </div>
-        <div class="list__container">
-          <a class="list__link" href="#">
-            <span class="list__text list__text--search">Поиск по сайту</span>
+        <div class="list__wrapper list__wrapper--form-color">
+          <a class="list__link list__wrapper-new" href="#">Новые поступления</a>
+          <a class="list__link list__wrapper-sale" href="#">Распродажа</a>
+        </div>
+        <div class="list__container list__third-container">
+          <a class="list__link list__text-search" href="#">
+            <span class="list__link-search">Поиск по сайту</span>
           </a>
-          <a class="list__link" href="#">
-            <span class="list__text list__text--bin">Корзина: пока пуста</span>
+          <a class="list__link list__text-cart" href="#">
+            <span class="list__link-cart">Корзина: пока пуста</span>
           </a>
         </div>
-        <p class="header__nav-text">Бесплатная доставка по России</p>
+        <p class="header__nav-text header__nav-text--form-color"> Бесплатная доставка по России</p>
       </div>
 
     </nav>
@@ -64,7 +62,7 @@
       <div class="form-hero__wrapper">
       </div>
     </section>
-    <p class="form-hero__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+    <p class="hero-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
       свяжемся с вами, чтобы уточнить детали.</p>
 
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
@@ -182,7 +180,7 @@
       </a>
       <ul class="footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" area-label="Вконтакте">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
             <svg width="28" height="22">
               <use xlink:href="img/sprite.svg#vk-icon"></use>
             </svg>
@@ -190,8 +188,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
-            area-label="Ютуб">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
             <svg width="28" height="22">
               <use xlink:href="img/sprite.svg#youtube-icon"></use>
             </svg>
@@ -199,7 +196,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--tg" href="https://t.me/htmlacademy" area-label="Телеграм">
+          <a class="social__link social__link--tg" href="https://t.me/htmlacademy">
             <svg width="28" height="22">
               <use xlink:href="img/sprite.svg#tg-icon"></use>
             </svg>
@@ -208,7 +205,7 @@
       </ul>
       <div class="footer-bottom">
         <p class="footer-bottom__text">Разработано</p>
-        <a class="footer-bottom__link" href="https://htmlacademy.ru/" area-label="Логотип HTML-academy">
+        <a class="footer-bottom__link" href="https://htmlacademy.ru/">
           <svg width="27" height="34">
             <use xlink:href="img/sprite.svg#academy-logo"></use>
           </svg>
@@ -217,7 +214,6 @@
       </div>
     </div>
   </footer>
-  </div>
   <script src="js/script.js"></script>
 </body>
 

@@ -24,7 +24,8 @@
   }
 
   @media (min-width: 1151px) {
-    max-width: calc(100% - 20px);
+    min-width: 1050px;
+    margin: 0 auto;
   }
 }
 
@@ -90,9 +91,10 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding-top: 158px;
-      min-height: 770px;
+      padding-top: 67px;
+      min-height: 663px;
       gap: 367px;
+      justify-content: space-between;
 
       &::after {
         content: "";
@@ -103,18 +105,18 @@
         width: 100%;
         height: 32px;
         position: absolute;
-        bottom: 15px;
+        bottom: -5px;
         z-index: 1;
 
         @media (min-width: $desktop-width) {
-          background-image: url("../img/icons/wave-decor-desktop.svg");
+          background-size: 1247px;
           background-repeat: repeat-x;
           height: 40px;
-          bottom: 6px;
+          bottom: -13px;
         }
 
         @media (min-width: 1205px) {
-          background-image: url("../img/icons/wave-decor-desktop.svg");
+          background-size: 1247px;
           background-repeat: repeat-x;
           height: 40px;
           bottom: 0;
@@ -128,6 +130,7 @@
       display: flex;
       flex-direction: column;
       gap: 353px;
+      padding-top: 73px;
     }
 
 
