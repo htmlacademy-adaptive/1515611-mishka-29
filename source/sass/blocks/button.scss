@@ -1,0 +1,31 @@
+.button {
+  background-color: transparent;
+  display: block;
+  color: $dark-grey;
+  text-align: center;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 14px 10px;
+  border: 2px solid $dark-grey;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: $dark-grey;
+    color: $basic-white;
+  }
+
+  &:active {
+    background-color: $basic-white;
+    color: $original-tiffany;
+  }
+
+  &:disabled {
+    background-color: $dark-grey;
+    color: hsl(0, 0%, 70%);
+  }
+}

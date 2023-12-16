@@ -1,0 +1,143 @@
+.goods-list__link {
+  @include no-decor;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $basic-white;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: left;
+  cursor: pointer;
+  display: block;
+  padding: 24px 0 33px 30px;
+
+  &:active {
+    background-color: $basic-white;
+    outline: none;
+    color: $original-tiffany;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      margin-top: -5px;
+    }
+    font-size: 20px;
+    line-height: 30px;
+    padding: 24px 0 40px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 0 42px 36px;
+  }
+
+  @media (min-width: 1151px) {
+    padding: 25px 0 60px 36px;
+  }
+}
+
+.goods-list__item {
+  position: relative;
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 334px;
+  }
+
+  &--interior {
+    background-color: $original-tiffany;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../img/icons/lamp.svg") no-repeat center center;
+      width: 40px;
+      height: 62px;
+      right: 36px;
+      top: 22px;
+
+      @media (min-width: $tablet-width) {
+        right: 36px;
+        top: 30px;
+      }
+    }
+  }
+
+  &--toys {
+    background-color: $dark-tiffany;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../img/icons/lego.svg") no-repeat center center;
+      width: 60px;
+      height: 60px;
+      right: 27px;
+      top: 21px;
+
+      @media (min-width: $tablet-width) {
+        right: 34px;
+        top: 30px;
+      }
+    }
+  }
+}
+
+.goods-list {
+  .goods-list__item:nth-child(odd) {
+    &:hover {
+      background-color: $dark-tiffany;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: 1px solid rgb(139, 14, 139);
+      outline-offset: -2px;
+    }
+
+    &:active {
+      background-color: $basic-white;
+      outline: none;
+      color: $original-tiffany;
+    }
+
+    &:active::before {
+      opacity: 0.2;
+    }
+
+    @media (min-width: $tablet-width) {
+      &:hover {
+        margin-top: -5px;
+      }
+    }
+  }
+
+  .goods-list__item:nth-child(even) {
+    &:hover {
+      background-color: $original-tiffany;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: 1px solid rgb(139, 14, 139);
+      outline-offset: -2px;
+    }
+
+    &:active {
+      background-color: $basic-white;
+      outline: none;
+      color: $original-tiffany;
+    }
+
+    &:active::before {
+      opacity: 0.2;
+    }
+
+    @media (min-width: $tablet-width) {
+      &:hover {
+        margin-top: -5px;
+      }
+    }
+  }
+}

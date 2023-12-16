@@ -1,0 +1,81 @@
+.control {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 18px;
+  padding-bottom: 43px;
+}
+
+.control__label {
+  position: relative;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+.control__label::before {
+  content: "";
+  position: absolute;
+  mask-image: url("../img/icons/checkbox.svg");
+  mask-repeat: no-repeat;
+  background-color: $basic-black;
+  left: -58px;
+  top: -11px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    mask-image: url("../img/icons/checkbox-tablet.svg");
+    mask-repeat: no-repeat;
+    left: -81px;
+    top: -14px;
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.control__input[type="checkbox"]:checked + .control__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../img/icons/tick.svg") no-repeat center center;
+  left: -58px;
+  top: -11px;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/icons/tick-tablet.svg") no-repeat center center;
+    left: -81px;
+    top: -14px;
+    width: 55px;
+    height: 55px;
+  }
+}
+
+
+.control__input {
+  &:hover ~ .control__label::before {
+    background-color: $original-tiffany;
+  }
+
+  &:active ~ .control__label::before {
+    background-color: $dark-tiffany;
+  }
+
+  &:focus ~ .control__label::before,
+  &:focus-visible ~ .control__label::before {
+    background-color: $dark-tiffany;
+  }
+
+  &:disabled ~ .control__label::before,
+  &:disabled ~ .control__label::after {
+    cursor: none;
+    opacity: 0.3;
+  }
+}

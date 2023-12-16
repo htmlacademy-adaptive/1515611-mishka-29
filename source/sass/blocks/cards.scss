@@ -1,0 +1,35 @@
+.cards__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 50px 45px 50px;
+    gap: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 49px;
+    flex-direction: row;
+    padding: 120px 50px 55px 50px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+.cards__container {
+  position: relative;
+  border: 1px solid $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
+    flex-direction: column;
+    max-width: 318px;
+  }
+}
