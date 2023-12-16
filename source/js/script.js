@@ -22,4 +22,3 @@ addToCartBtn.addEventListener("click", () => {
 addToCartModalBtn.addEventListener("click", () => {
   orderModal.classList.remove("show-modal");
 });
-//
