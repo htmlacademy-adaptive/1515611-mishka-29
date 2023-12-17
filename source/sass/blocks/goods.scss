@@ -167,7 +167,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 127px 158px 68px 53px;
+    // grid-template-rows: 127px 158px 68px 53px;
+    grid-template-rows: 8em 11em 5em 3em;
     grid-column-gap: 45px;
   }
 
