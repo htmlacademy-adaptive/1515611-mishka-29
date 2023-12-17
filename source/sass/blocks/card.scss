@@ -133,6 +133,7 @@
   appearance: none;
   border: none;
   background: none;
+  opacity: 0.2;
 
   &::before {
     content: "";
@@ -145,7 +146,7 @@
     mask-size: contain;
     mask-repeat: no-repeat;
     cursor: pointer;
-    background-color: $basic-grey;
+    background-color: $basic-black;
   }
 
   @media (min-width: $desktop-width) {

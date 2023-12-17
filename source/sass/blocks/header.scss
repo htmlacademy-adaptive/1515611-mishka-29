@@ -22,7 +22,7 @@
     width: 100%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     &.opened {
       display: block;
       position: absolute;
@@ -342,7 +342,6 @@
 @media (min-width: 1151px) {
   .header__nav-list {
     grid-template-columns: 50vw 300px 82px 47vw;
-    //width: 1050px;
 
     & .list__container {
       justify-content: flex-end;
