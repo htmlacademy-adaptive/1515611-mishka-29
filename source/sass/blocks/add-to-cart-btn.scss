@@ -1,0 +1,17 @@
+
+.add-to-cart-btn {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $basic-white;
+  font-size: 17px;
+  line-height: 16px;
+  background-color: $original-tiffany;
+  border: none;
+  padding: 20px 0;
+  cursor: pointer;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 0;
+  }
+}

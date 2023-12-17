@@ -1,0 +1,45 @@
+
+.radiobutton {
+  width: 100%;
+  border: 2px solid $basic-grey;
+  padding: 17px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $basic-black;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background-color: $basic-white;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid rgba(69, 69, 69, 0.3);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid rgb(139, 14, 139);
+  }
+
+  &:active {
+    border: 2px solid $dark-tiffany;
+  }
+
+  & .radiobutton__input:focus,
+  .radiobutton__input:focus-visible {
+    & ~ .radiobutton__label {
+      color: $dark-tiffany;
+    }
+  }
+}
+
+
+// неактивный li
+.radiobutton__disabled {
+  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    border: 2px solid $basic-grey;
+  }
+}

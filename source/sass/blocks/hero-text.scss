@@ -1,0 +1,28 @@
+
+.hero-text {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 0 32px;
+  margin: 0 0 30px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 30px auto;
+    padding: 0 225px;
+  }
+
+  @media (min-width: 1151px) {
+    margin: 0 auto;
+    max-width: 1050px;
+    padding: 0 120px;
+  }
+}

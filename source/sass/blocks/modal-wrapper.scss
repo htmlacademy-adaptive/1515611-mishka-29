@@ -1,0 +1,10 @@
+
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+
+  @media (min-width: $tablet-width) {
+    gap: 16px;
+  }
+}

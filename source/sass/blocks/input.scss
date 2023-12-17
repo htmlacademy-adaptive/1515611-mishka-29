@@ -203,7 +203,6 @@
   }
 }
 
-
 .input__area--email[type="email"]::placeholder {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
@@ -218,31 +217,6 @@
   }
 }
 
-.group-info__item .input__label--tel {
-  gap: 7px;
-
-  @media (min-width: $tablet-width) {
-    gap: 130px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 77px;
-  }
-}
-
-
-.group-info__item .input__label--email {
-  gap: 7px;
-
-  @media (min-width: $tablet-width) {
-    gap: 105px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 52px;
-  }
-}
-
 .input__add {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: bold;
@@ -254,18 +228,6 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
-  }
-}
-
-.group-extra .input__label {
-  gap: 21px;
-
-  @media (min-width: $tablet-width) {
-    gap: 130px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 75px;
   }
 }
 
@@ -291,11 +253,4 @@
   position: absolute;
   left: 79px;
   top: 7px;
-}
-
-.user-data {
-  @media (min-width: $tablet-width) {
-    font-size: 19px;
-    line-height: 18px;
-  }
 }
