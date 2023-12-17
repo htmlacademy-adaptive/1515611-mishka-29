@@ -9,6 +9,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="manifest" href="manifest.json">
 </head>
@@ -44,7 +45,7 @@
             <span class="list__link-search">Поиск по сайту</span>
           </a>
           <a class="list__link list__text-cart" href="#">
-            <span class="list__link-cart">Корзина: пока пуста</span>
+            <span class="list__link--cart">Корзина: пока пуста</span>
           </a>
         </div>
         <p class="header__nav-text"> Бесплатная доставка по России</p>
@@ -85,8 +86,8 @@
       </div>
       <div class="goods__wrapper">
         <p class="goods__text">Экологически чистая пряжа,
-          ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-
+          ручная работа. Доступны в шести расцветках и трех размерах.
+        </p>
         <dl class="goods__table">
           <div class="goods__container">
             <dt class="goods__item">Цвет</dt>
@@ -117,12 +118,12 @@
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас:</h2>
       <ul class="about-us__list">
-        <li class="about-us__item about-us__item--flower">Экологически<br> чистые материалы</li>
+        <li class="about-us__item about-us__item--flower">Экологически<br> чистые материалы </li>
         <li class="about-us__item about-us__item--banknote">Скандинавский стиль<br> по российской цене</li>
         <li class="about-us__item about-us__item--heart">Увеличивает лайки<br> на фотографиях</li>
         <li class="about-us__item about-us__item--thread">Связано вручную<br> с любовью и умилением</li>
         <li class="about-us__item about-us__item--rocket">Поддержка отечественного<br> производителя</li>
-        <li class="about-us__item about-us__item--gift">Поставляется<br> в подарочной упаковке</li>
+        <li class="about-us__item about-us__item--gift">Поставляется<br> в подарочной упаковке </li>
       </ul>
     </section>
 
@@ -151,10 +152,10 @@
           </li>
         </ul>
         <div class="feedback__buttons">
-          <button class="feedback__previous  slider-button button" type="button">
+          <button class="feedback__previous  slider-button" type="button">
             <span class="visually-hidden">Листать список отзывов назад.</span>
           </button>
-          <button class="feedback__next  slider-button button" type="button">
+          <button class="feedback__next  slider-button" type="button">
             <span class="visually-hidden">Листать список отзывов вперед.</span>
           </button>
         </div>
@@ -176,7 +177,9 @@
           </div>
           <div class="contacts__container contacts__container--address">
             <dt class="contacts__item">адрес:</dt>
-            <dd class="contacts__item">г. Санкт-Петербург<br> ул. Большая Конюшенная<br>д. 19/8, офис 101
+            <dd class="contacts__item">г. Санкт-Петербург<br> ул. Большая Конюшенная<br>д. 19/8, офис 101 г.
+              Санкт-Петербург<br> ул. Большая Конюшенная<br>д. 19/8, офис 101 г. Санкт-Петербург<br> ул. Большая
+              Конюшенная<br>д. 19/8, офис 101
             </dd>
           </div>
         </dl>
@@ -220,6 +223,7 @@
         <svg class="footer__logo-svg" width="101" height="34">
           <use xlink:href="img/sprite.svg#footer-logo"></use>
         </svg>
+        <span class="visually-hidden">Логотип Мишки.</span>
       </a>
       <ul class="footer__social social">
         <li class="social__item">
@@ -227,7 +231,7 @@
             <svg width="28" height="22">
               <use xlink:href="img/sprite.svg#vk-icon"></use>
             </svg>
-
+            <span class="visually-hidden">Вконтакте.</span>
           </a>
         </li>
         <li class="social__item">
@@ -235,7 +239,7 @@
             <svg width="28" height="22">
               <use xlink:href="img/sprite.svg#youtube-icon"></use>
             </svg>
-
+            <span class="visually-hidden">Ютуб.</span>
           </a>
         </li>
         <li class="social__item">
@@ -243,6 +247,7 @@
             <svg width="28" height="22">
               <use xlink:href="img/sprite.svg#tg-icon"></use>
             </svg>
+            <span class="visually-hidden">Телеграм.</span>
           </a>
         </li>
       </ul>
@@ -252,7 +257,7 @@
           <svg width="27" height="34">
             <use xlink:href="img/sprite.svg#academy-logo"></use>
           </svg>
-
+          <span class="visually-hidden">Логотип HTML-академии.</span>
         </a>
       </div>
     </div>

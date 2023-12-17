@@ -140,6 +140,8 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/photos/index/hero-tablet@2x.jpg");
+        background-size: cover;
+        background-position-y: bottom;
       }
     }
 

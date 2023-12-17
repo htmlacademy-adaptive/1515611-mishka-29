@@ -24,3 +24,29 @@
     width: 100%;
   }
 }
+
+
+.group-info__item .input__label--tel {
+  gap: 7px;
+
+  @media (min-width: $tablet-width) {
+    gap: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 77px;
+  }
+}
+
+
+.group-info__item .input__label--email {
+  gap: 7px;
+
+  @media (min-width: $tablet-width) {
+    gap: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 52px;
+  }
+}

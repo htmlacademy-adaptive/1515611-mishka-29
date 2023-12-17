@@ -19,3 +19,16 @@
     width: 100%;
   }
 }
+
+
+.group-extra .input__label {
+  gap: 21px;
+
+  @media (min-width: $tablet-width) {
+    gap: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 75px;
+  }
+}
