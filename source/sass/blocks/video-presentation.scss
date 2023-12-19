@@ -15,6 +15,7 @@
     grid-template-rows: 165px 165px 135px;
     margin: 0 auto 58px auto;
     max-width: 1050px;
+    padding-bottom: 36px;
   }
 }
 
@@ -31,7 +32,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding: 35px 0 0 105px;
+    padding: 31px 0 0 105px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +79,7 @@
   @media (min-width: $desktop-width) {
     padding: 7px 0 0 80px;
     text-align: left;
+    grid-area: 2/2/3/4;
   }
 }
 

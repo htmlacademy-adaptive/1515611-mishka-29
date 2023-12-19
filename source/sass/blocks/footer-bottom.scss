@@ -42,6 +42,8 @@
 
 .footer-bottom__link {
   color: $original-tiffany;
+  position: relative;
+  top: 7px;
 
   &:hover {
     color: #46c1ae;

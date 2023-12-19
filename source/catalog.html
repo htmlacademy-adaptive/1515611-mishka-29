@@ -46,7 +46,7 @@
             <span class="list__link-search">Поиск по сайту</span>
           </a>
           <a class="list__link list__text-cart" href="#">
-            <span class="list__link-cart">Корзина: пока пуста</span>
+            <span class="list__link--cart">Корзина: пока пуста</span>
           </a>
         </div>
         <p class="header__nav-text header__nav-text--catalog-color"> Бесплатная доставка по России</p>
@@ -191,7 +191,8 @@
         как появляются наши товары.
       </p>
       </div>
-      <button class="video-presentation__button button" type="button">Сделать заказ
+      <button id="video-presentation-button" class="video-presentation__button button hide-modal show-modal"
+        type="button">Сделать заказ
 
       </button>
 
@@ -247,19 +248,35 @@
   <div id="order-modal" class="modal-container">
     <div id="add-to-cart" class="modal hide-modal">
       <div class="modal-wrapper">
-        <h1 class="modal__title">Добавить<br> в корзину</h1>
-        <p class="modal__text">Выберите размер:</p>
-        <div class="modal__buttons">
-          <button class="modal__button" type="button">S</button>
-          <button class="modal__button" type="button">M</button>
-          <button class="modal__button" type="button">L</button>
-        </div>
-        <button id="add-to-cart-btn" class="add-to-cart-btn button" type="button">Добавить</button>
+
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal__form-group">
+            <h1 class="modal__title">Добавить&nbsp;<br> в корзину</h1>
+            <h2 class="modal__text">Выберите размер</h2>
+            <ul class="modal__list">
+              <li class="modal__item radiobutton">
+                <input id="radiobutton__small" class="radiobutton__input radiobutton__small visually-hidden"
+                  type="radio" name="type" value="small" checked>
+                <label class="radiobutton__label" for="radiobutton__small">S</label>
+              </li>
+              <li class="modal__item radiobutton">
+                <input id="radiobutton__medium" class="radiobutton__input radiobutton__medium visually-hidden"
+                  type="radio" name="type" value="medium" checked>
+                <label class="radiobutton__label" for="radiobutton__medium">M</label>
+              </li>
+              <li class="modal__item radiobutton">
+                <input id="radiobutton__large" class="radiobutton__input radiobutton__large visually-hidden"
+                  type="radio" name="type" value="large">
+                <label class="radiobutton__label" for="radiobutton__large">L</label>
+              </li>
+            </ul>
+            <button id="add-to-cart-btn" class="add-to-cart-btn button" type="submit">Добавить</button>
+          </fieldset>
+        </form>
       </div>
     </div>
   </div>
-
-  <script src="js/script.js"></script>
+  <script src="js/catalog.js"></script>
 </body>
 
 </html>

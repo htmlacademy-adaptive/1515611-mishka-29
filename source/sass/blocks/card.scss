@@ -5,7 +5,7 @@
   color: $basic-black;
   font-size: 17px;
   line-height: 24px;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -87,17 +87,17 @@
   padding: 25px 25px 20px 27px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 31px 0 0;
+    padding: 22px 31px 0 0;
     width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 22px 33px 25px 27px;
+    padding: 28px 33px 25px 27px;
   }
 
   &--bigbag {
     @media (min-width: $desktop-width) {
-      padding: 22px 47px 25px 27px;
+      padding: 27px 47px 25px 27px;
     }
   }
 }
@@ -119,7 +119,7 @@
 
 .card__bottom {
   position: relative;
-  padding-top: 22px;
+  padding-top: 25px;
   border-top: 1px solid $basic-grey;
   display: flex;
 }

@@ -6,11 +6,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 125px;
-    margin-bottom: 53px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 170px 0 57px 125px;
+    padding: 170px 0 0 125px;
     margin: 0 auto;
     max-width: 1050px;
   }
@@ -28,7 +28,7 @@
     font-size: 43px;
     line-height: 50px;
     padding: 0 50px;
-    margin-bottom: 95px;
+    margin-bottom: 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +36,7 @@
     font-size: 53px;
     line-height: 57px;
     padding: 0 50px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 }
 
@@ -95,6 +95,7 @@
     display: grid;
     padding: 0 50px;
     row-gap: 56px;
+    column-gap: 5px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
@@ -105,6 +106,7 @@
     @media (min-width: $desktop-width) {
       row-gap: 0;
       grid-template-columns: 0.75fr 1fr;
+      column-gap: 0;
     }
   }
 
@@ -154,10 +156,6 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 22px;
-
-    &--gift::before {
-      bottom: 112px;
-    }
   }
 
   &--flower::before {
@@ -167,7 +165,7 @@
     height: 38px;
     background: url("../img/icons/flower.svg") no-repeat center center;
     left: 8px;
-    bottom: 56px;
+    top: 6px;
   }
 
   &--banknote::before {
@@ -177,7 +175,7 @@
     height: 27px;
     background: url("../img/icons/banknote.svg") no-repeat center center;
     left: 0;
-    bottom: 66px;
+    top: 6px;
   }
 
   &--heart::before {
@@ -187,7 +185,7 @@
     height: 27px;
     background: url("../img/icons/heart.svg") no-repeat center center;
     left: 6px;
-    bottom: 61px;
+    top: 6px;
   }
 
   &--thread::before {
@@ -197,7 +195,7 @@
     height: 34px;
     background: url("../img/icons/thread.svg") no-repeat center center;
     left: 3px;
-    bottom: 57px;
+    top: 6px;
   }
 
   &--rocket::before {
@@ -207,7 +205,7 @@
     height: 23px;
     background: url("../img/icons/rocket.svg") no-repeat center center;
     left: -7px;
-    bottom: 68px;
+    top: 6px;
   }
 
   &--gift::before {
@@ -217,6 +215,10 @@
     height: 38px;
     background: url("../img/icons/gift.svg") no-repeat center center;
     left: 2px;
-    bottom: 54px;
+    top: -3px;
+
+    @media (min-width: $tablet-width) {
+      bottom: 120px;
+    }
   }
 }

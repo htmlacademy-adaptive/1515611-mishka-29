@@ -96,10 +96,11 @@
     justify-content: space-between;
     padding: 0 50px;
     gap: 136px;
+    margin: 0 auto -7px auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
+    margin: 0 auto -7px auto;
     max-width: 1150px;
     gap: 172px;
     padding: 0 222px 0 222px;

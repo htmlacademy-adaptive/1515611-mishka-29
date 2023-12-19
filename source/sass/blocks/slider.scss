@@ -28,7 +28,7 @@
     br {
       display: none;
     }
-    padding: 0 70px 0 0;
+    padding: 0 70px 7px 0;
     margin-top: -7px;
   }
 }
@@ -68,19 +68,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 63px;
+    margin-top: 0;
     padding: 0;
   }
 }
 
 .slider__item {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
+  display: flex;
+  flex-direction: column;
 }
-
 
 .slider__item--current {
   display: none;
@@ -101,6 +97,6 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 46.5em 12em;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 100px 1fr 100px;
   }
 }

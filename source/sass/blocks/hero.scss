@@ -145,7 +145,7 @@
       }
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: $desktop-width) {
       background-image: url("../img/photos/index/hero-desktop.jpg");
 
       @media (min-resolution: 2dppx) {
