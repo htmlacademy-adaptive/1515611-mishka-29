@@ -14,12 +14,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    transform: translate(18px, 125px);
+    transform: translate(22px, -81px);
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    top: 67px;
-    transform: translate(0, 0);
+    transform: translate(1px, -116px);
   }
 }

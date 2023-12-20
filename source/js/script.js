@@ -22,3 +22,15 @@ addToCartBtn.addEventListener("click", () => {
 addToCartModalBtn.addEventListener("click", () => {
   orderModal.classList.remove("show-modal");
 });
+
+//Catalog modal
+
+const videoBtn = document.getElementById("video-presentation-button");
+
+videoBtn.addEventListener("click", () => {
+  orderModal.classList.add("show-modal");
+});
+
+addToCartBtn.addEventListener("click", () => {
+  orderModal.classList.remove("show-modal");
+});

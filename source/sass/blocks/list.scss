@@ -260,10 +260,10 @@
     grid-template-columns: 50vw 300px 82px 47vw;
 
     & .list__container {
-      justify-content: flex-end;
+      justify-content: flex-start;
 
       &.list__second-container {
-        gap: 50px;
+        gap: 72px;
       }
 
       &.list__third-container {
@@ -273,7 +273,7 @@
     }
 
     & .list__wrapper {
-      justify-content: flex-end;
+      justify-content: flex-start;
       grid-area: 2/1/2/2;
     }
 

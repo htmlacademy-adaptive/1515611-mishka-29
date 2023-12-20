@@ -140,16 +140,17 @@
   border-left: none;
   border-right: none;
   background-color: transparent;
+  font-family: inherit;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 18px;
-    padding: 10px 10px 19px 0;
+    padding: 10px 10px 19px 19px;
     width: 100%;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 10px 10px 19px 16px;
+  @media (min-width: $desktop-width) {
+    padding: 10px 10px 17px 16px;
   }
 
   &--tel {
